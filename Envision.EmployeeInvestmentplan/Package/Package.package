@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="889987a7-37e1-4d62-a452-1662a7f47d56" solutionId="889987a7-37e1-4d62-a452-1662a7f47d56" resetWebServer="false" sharePointProductVersion="15.0" name="Envision.EmployeeInvestmentplan" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ae715c8c-b1e1-4477-9d2b-a615877bc054" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="9ebcc825-5883-42df-9d08-f6d5023df6da" />
+    <projectItemReference itemId="d95c31a1-ec9f-4917-839b-a8b26c132782" />
+  </projectItems>
+</package>
