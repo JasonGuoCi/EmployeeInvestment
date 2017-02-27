@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Envision.EmployeeInvestmentplan.Utility.Enums
+namespace Envision.EmployeeInvestmentplan.Utility.Handlers
 {
-    public enum InvestMethodName
+   public  class InvestHandler
     {
-        AddItem=0,
-        GetItems=1
+
     }
 }

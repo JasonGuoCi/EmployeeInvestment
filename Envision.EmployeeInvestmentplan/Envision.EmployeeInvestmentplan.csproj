@@ -40,11 +40,16 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <TokenReplacementFileExtensions>ashx</TokenReplacementFileExtensions>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
@@ -64,10 +69,14 @@
       <DependentUpon>AjaxHandlers.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Biz\InvestInsertModel.cs" />
+    <Compile Include="Utility\Biz\InvestModel.cs" />
     <Compile Include="Utility\Enums\InvestMethodName.cs" />
     <Compile Include="Utility\Enums\ResponseStatus.cs" />
     <Compile Include="Utility\Extensions\BaseTypeExtension.cs" />
+    <Compile Include="Utility\Handlers\InvestHandler.cs" />
     <Compile Include="Utility\Static\StaticPara.cs" />
+    <Compile Include="Utility\Utilities\IBUtils.cs" />
     <Compile Include="Utility\Utilities\ListItemsHelper.cs" />
     <Compile Include="Utility\Utilities\Util.cs" />
   </ItemGroup>
@@ -80,6 +89,14 @@
     </None>
     <None Include="key.snk" />
     <None Include="Layouts\Investment\Handlers\AjaxHandlers.ashx" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap-theme.min.css.map" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap.css.map" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\Investment\Scripts\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d95c31a1-ec9f-4917-839b-a8b26c132782}</SharePointProjectItemId>
     </None>
@@ -93,15 +110,25 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utility\Handlers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="CONTROLTEMPLATES\Investment\ucRegistration.ascx" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="Layouts\Investment\Scripts\Global.js" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap.css" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\js\bootstrap.js" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Layouts\Investment\Scripts\Bootstrap\js\npm.js" />
+    <Content Include="Layouts\Investment\Scripts\document.js" />
+    <Content Include="Layouts\Investment\Scripts\EnInvestment.js" />
+    <Content Include="Layouts\Investment\Scripts\EnvisionPortal.js" />
+    <Content Include="Layouts\Investment\Scripts\global.js" />
+    <Content Include="Layouts\Investment\Scripts\jquery-1.11.3.min.js" />
     <Content Include="Modules\SitePages\Registration.aspx" />
     <Content Include="Modules\SitePages\Elements.xml" />
     <Content Include="Modules\SitePages\Sample.txt" />

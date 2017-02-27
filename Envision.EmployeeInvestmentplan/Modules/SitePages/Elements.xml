@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="SitePages">
-    <File Path="SitePages\Sample.txt" Url="SitePages/Sample.txt" />
-    <File Path="SitePages\Registration.aspx" Url="SitePages/Registration.aspx" />
+
+  <Module Name="SitePages" Url="SitePages">
+    <File Path="SitePages\Registration.aspx" Url="Registration.aspx" Type="GhostableInLibrary" />
   </Module>
 </Elements>

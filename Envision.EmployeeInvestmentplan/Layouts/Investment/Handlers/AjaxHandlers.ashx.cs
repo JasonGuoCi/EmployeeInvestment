@@ -4,6 +4,8 @@ using Microsoft.SharePoint.WebControls;
 using System.Web;
 using Envision.EmployeeInvestmentplan.Utility.Enums;
 using Envision.EmployeeInvestmentplan.Utility.Utilities;
+using System.Collections.Generic;
+using Envision.EmployeeInvestmentplan.Utility.Biz;
 
 namespace Envision.EmployeeInvestmentplan.Layouts.Investment.Handlers
 {
@@ -20,20 +22,28 @@ namespace Envision.EmployeeInvestmentplan.Layouts.Investment.Handlers
 
         public void ProcessRequest(HttpContext context)
         {
+           
             context.Response.ContentType = "application/Json";
             string contents;
             //int listItemId;
             try
             {
                 InvestMethodName methodName = (InvestMethodName)Convert.ToInt32(context.Request["MethodName"]);
-
+                string employee = context.Request["Employee"];
+                string amountF = context.Request["AmountF"];
+                string amountB = context.Request["AmountB"];
                 switch (methodName)
                 {
-                    case InvestMethodName.SaveItem:
-                        contents = PortalHandler.GetWeather();
+                    case InvestMethodName.AddItem:
+                        List<InvestModel> dataList = new List<InvestModel>();
+                        
+                        dataList.employee = employee;
+                        dataList.amountF = amountF;
+                        dataList.amountB = amountB;
+                        contents = ListItemsHelper.AddListItem(dataList);
                         break;
-                    case InvestMethodName.Getitems:
-                        contents = PortalHandler.GetAnnouncement();
+                    case InvestMethodName.GetItems:
+                        contents = ListItemsHelper.GetListItems();
                         break;
                     //case PortalMethodName.GetAnnouncementDetailed:
                     //    listItemId = IBRequest.GetQueryInt("listItemId");

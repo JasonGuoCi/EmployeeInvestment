@@ -66,31 +66,59 @@ var global = {
                 type: "GET",   //访问WebService使用Post方式请求
                 contentType: "application/json", //WebService 会返回Json类型
                 url: ajaxUrl, //"/_layouts/UDoc/Handlers/AjaxHandler.ashx", //调用WebService的地址和方法名称组合 ---- WsURL/方法名
-                //data: data,         //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到       
+                data: data,         //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到       
                 dataType: "json",
-                beforeSend: function () {
-                    if (selector) {
-                        global.methods.loading(selector, null, loadingId);
-                    }
-                }, //发送请求
+                
                 success: function (response) {
                     if ($.isFunction(success)) {
                         success(loadingId, response);
-                    } else {
-                        if (selector) {
-                            global.methods.closeLoading(loadingId);
-                        }
-                    }
+                    } 
                 },
                 error: function (xmlHttpRequest, textStatus, errorThrown) {
                     if ($.isFunction(error)) {
                         error(loadingId, xmlHttpRequest, textStatus, errorThrown);
                         return;
                     }
-                    if (selector) {
-                        global.methods.closeLoading(loadingId);
+                   
+                   
+                }
+            });
+        },
+        ajaxp: function (url, data, selector, success, error) {
+            var loadingId = $.getUniqueId();
+            //var currentWebUrl = $("#hidCurrentWebUrl").val();
+            data = data || {};
+            var ajaxUrl = "/_layouts/15/Investment/Handlers/AjaxHandlers.ashx?MethodName=" + url + "&Time=" + $.getUniqueId();
+            //for (var item in data) {
+            //    if (data.hasOwnProperty(item)) {
+            //        var value = data[item];
+            //        ajaxUrl += ("&" + item + "=" + ((value === null || value === undefined) ? "" : value));
+            //    }
+            //}
+           // ajaxUrl = (currentWebUrl == undefined ? "" : currentWebUrl) + ajaxUrl;
+
+            $.ajax({
+                type: "POST",   //访问WebService使用Post方式请求
+                contentType: "application/json", //WebService 会返回Json类型
+                url: ajaxUrl, //"/_layouts/UDoc/Handlers/AjaxHandler.ashx", //调用WebService的地址和方法名称组合 ---- WsURL/方法名
+                data: data,         //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到       
+                dataType: "json",
+                //beforeSend: function () {
+                //    if (selector) {
+                //        global.methods.loading(selector, null, loadingId);
+                //    }
+                //}, //发送请求
+                success: function (response) {
+                    if ($.isFunction(success)) {
+                        success(loadingId, response);
+                    } 
+                },
+                error: function (xmlHttpRequest, textStatus, errorThrown) {
+                    if ($.isFunction(error)) {
+                        error(loadingId, xmlHttpRequest, textStatus, errorThrown);
+                        return;
                     }
-                    $.layer.alert(textStatus);
+                   
                 }
             });
         },
