@@ -51,38 +51,13 @@
             </tr>
         </table>
     </div>
-    <script src="../_layouts/15/Investment/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../_layouts/15/Investment/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../_layouts/15/Investment/Scripts/EnInvestment.js"></script>
     <script type="text/javascript">
 
         $(function () {
-            var employee = $("#employee").val();
-            var amountF = $("#amountF").val();
-            var amountB = $("#amountB").val();
             $("#btnSubmit").click(function () {
-                $.ajax({
-                    type: "POST",
-                    url: "/_layouts/15/Investment/Handlers/AjaxHandlers.ashx?MethodName=" + url,
-                    async: false,
-                    contentType: "application/json; charset=utf-8",
-
-                    success: function (msg) {
-
-                        if (msg == "OK") {
-                            alert("The file has been successfully transferred !");
-                            window.location.href = targetUrl;
-                            //window.navigate("AllItems.aspx");
-                        }
-                        else if (msg == "Fail") {
-                            alert("The file has NOT been successfully transferred... Please try again !");
-                            window.location.reload();
-                        }
-
-                    },
-                    error: function (msg) {
-                        alert("error");
-                    }
-                });
-
+                envinvest.methods.addItems();
             });
         });
     </script>

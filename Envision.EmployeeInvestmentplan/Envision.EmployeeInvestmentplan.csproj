@@ -65,11 +65,10 @@
     <Compile Include="CONTROLTEMPLATES\Investment\ucRegistration.ascx.designer.cs">
       <DependentUpon>ucRegistration.ascx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\Investment\Handlers\AjaxHandlers.ashx.cs">
-      <DependentUpon>AjaxHandlers.ashx</DependentUpon>
+    <Compile Include="Layouts\Investment\Handlers\AjaxHandler.ashx.cs">
+      <DependentUpon>AjaxHandler.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\Biz\InvestInsertModel.cs" />
     <Compile Include="Utility\Biz\InvestModel.cs" />
     <Compile Include="Utility\Enums\InvestMethodName.cs" />
     <Compile Include="Utility\Enums\ResponseStatus.cs" />
@@ -88,7 +87,7 @@
       <FeatureId>{ae715c8c-b1e1-4477-9d2b-a615877bc054}</FeatureId>
     </None>
     <None Include="key.snk" />
-    <None Include="Layouts\Investment\Handlers\AjaxHandlers.ashx" />
+    <Content Include="Layouts\Investment\Handlers\AjaxHandler.ashx" />
     <None Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap-theme.css.map" />
     <None Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap-theme.min.css.map" />
     <None Include="Layouts\Investment\Scripts\Bootstrap\css\bootstrap.css.map" />

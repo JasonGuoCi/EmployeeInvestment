@@ -53,7 +53,7 @@ var global = {
             var loadingId = $.getUniqueId();
             var currentWebUrl = $("#hidCurrentWebUrl").val();
             data = data || {};
-            var ajaxUrl = "/_layouts/15/Investment/Handlers/AjaxHandlers.ashx?MethodName=" + url + "&Time=" + $.getUniqueId();
+            var ajaxUrl = "/_layouts/15/Investment/Handlers/AjaxHandler.ashx?MethodName=" + url + "&Time=" + $.getUniqueId();
             for (var item in data) {
                 if (data.hasOwnProperty(item)) {
                     var value = data[item];
@@ -88,7 +88,7 @@ var global = {
             var loadingId = $.getUniqueId();
             //var currentWebUrl = $("#hidCurrentWebUrl").val();
             data = data || {};
-            var ajaxUrl = "/_layouts/15/Investment/Handlers/AjaxHandlers.ashx?MethodName=" + url + "&Time=" + $.getUniqueId();
+            var ajaxUrl = "/_layouts/15/Investment/Handlers/AjaxHandler.ashx?MethodName=" + url + "&Time=" + $.getUniqueId();
             //for (var item in data) {
             //    if (data.hasOwnProperty(item)) {
             //        var value = data[item];

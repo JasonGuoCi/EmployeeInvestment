@@ -27,15 +27,15 @@ namespace Envision.EmployeeInvestmentplan.Utility.Utilities
                         using (SPWeb web = spSite.OpenWeb())
                         {
                             web.AllowUnsafeUpdates = true;
-                            string mappingListTitle = GetConfigItem(StaticPara.MappingListTitle,web);
-                            SPListItemCollection announcementListIitem = GetInvestmentListItems(web, mappingListTitle);
+                            string panListTitle = GetConfigItem(StaticPara.PlanListTitle, web);
+                            SPListItemCollection announcementListIitem = GetInvestmentListItems(web, panListTitle);
                             foreach (SPListItem listitem in announcementListIitem)
                             {
                                 InvestmentList.Add(new
                                 {
                                     id = listitem.ID,
                                     title = listitem.Title,
-                                    publishedDate = listitem["PublishedDate"] == null ? "" : IBUtils.ObjectToDateTime(listitem["PublishedDate"]).ToString("MM-dd")
+                                    //publishedDate = listitem["PublishedDate"] == null ? "" : IBUtils.ObjectToDateTime(listitem["PublishedDate"]).ToString("MM-dd")
                                 });
                             }
                             web.AllowUnsafeUpdates = false;
@@ -45,7 +45,7 @@ namespace Envision.EmployeeInvestmentplan.Utility.Utilities
                 });
                 return Util.WriteJsonpToResponse(ResponseStatus.Success, InvestmentList);
             }
-            
+
             catch (Exception exception)
             {
                 return Util.WriteJsonpToResponse(ResponseStatus.Exception, exception.Message);
@@ -79,13 +79,13 @@ namespace Envision.EmployeeInvestmentplan.Utility.Utilities
         }
 
 
-        public static string AddListItem(List<InvestModel> dataList)
+        public static string AddListItem(InvestModel dataList)
         {
             try
             {
 
                 string weburl = SPContext.Current.Web.Url;
-                
+
                 SPSecurity.RunWithElevatedPrivileges(() =>
                 {
                     using (SPSite spSite = new SPSite(weburl))
@@ -94,16 +94,17 @@ namespace Envision.EmployeeInvestmentplan.Utility.Utilities
                         using (SPWeb web = spSite.OpenWeb())
                         {
                             web.AllowUnsafeUpdates = true;
-                            string mappingListTitle = GetConfigItem(StaticPara.MappingListTitle, web);
-                            SPList list = web.Lists[mappingListTitle];
+                            string panListTitle = GetConfigItem(StaticPara.PlanListTitle, web);
+                            SPList list = web.Lists[panListTitle];
                             SPListItem newItem = list.AddItem();
-                            newItem["Title"]=dataList.
+                            newItem["Title"] = dataList.employee;
+                            newItem.Update();
                             web.AllowUnsafeUpdates = false;
                         }
                         spSite.AllowUnsafeUpdates = false;
                     }
                 });
-                return Util.WriteJsonpToResponse(ResponseStatus.Success, InvestmentList);
+                return Util.WriteJsonpToResponse(ResponseStatus.Success);
             }
 
             catch (Exception exception)
