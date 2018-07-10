@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- 父内容类型: Item (0x01) -->
+  <ContentType ID="0x01009C41461F68AA4E5CA6458D764587DFDC" Name="Forum ContentType" Group="KMS Content Type" Description="Forum ContentType" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{4f2b14cb-1966-434c-bfdd-c2211aa5afad}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ForumContent;" Required="FALSE" Name="Field_KMS_ForumContent" NumLines="6" />
+      <FieldRef ID="{dd10b4bb-5c07-419a-a429-16337f750459}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ForumType;" Required="false" Name="Field_KMS_ForumType" />
+      <FieldRef ID="{4eeae98d-78cd-4d70-aa1b-bc2cd64424b2}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_IsTop;" Hidden="TRUE" Name="Field_KMS_IsTop" />
+      <FieldRef ID="{2ab8d938-0362-4cf2-8585-7bba97ca0a12}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_CommentsCount;" Name="Field_KMS_CommentsCount" />
+      <FieldRef ID="{21badfda-bc9d-4922-8700-88b74e10a221}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ViewCount;" Name="Field_KMS_ViewCount" />
+      <FieldRef ID="{308e242b-da75-43d1-b302-5c80974ee62b}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_LastComments;" Required="FALSE" Name="Field_KMS_LastComments" Format="DateTime" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

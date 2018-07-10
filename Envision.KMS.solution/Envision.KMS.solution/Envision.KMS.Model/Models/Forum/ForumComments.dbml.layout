@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ForumComments">
+  <DataContextMoniker Name="/ForumCommentsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fbe43b93-ce19-43d6-a17e-2656055a88a5" absoluteBounds="5.5, 2, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ForumCommentsDataContext/KMSForum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="776ac5b1-2f18-4f41-b3ad-0f92c471ab7f" absoluteBounds="5.515, 2.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

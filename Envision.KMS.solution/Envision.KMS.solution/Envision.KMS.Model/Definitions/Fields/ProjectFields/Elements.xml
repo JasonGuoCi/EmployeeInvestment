@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--*********************公告****************************************-->
+  <Field
+       ID="{79789F6D-4493-4A27-826F-57BAA16112FB}"
+       Name="Field_KMS_MultiContent"
+       DisplayName="$Resources:KMS.Global,Field_KMS_MultiContent;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Required="TRUE"
+       Type="Note">
+  </Field>
+
+  <Field
+       ID="{CB1C61E9-35E4-48CE-AF95-4999C13C9210}"
+       Name="Field_KMS_MultiEnglishContent"
+       DisplayName="$Resources:KMS.Global,Field_KMS_MultiEnglishContent;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Required="TRUE"
+       Type="Note">
+  </Field>
+
+  <Field
+     ID="{E3B77FCB-5C9C-4074-A6EB-F2F36E5CEA36}"
+     Name="Field_KMS_Status"
+     DisplayName="$Resources:KMS.Global,Field_KMS_Status;"
+     Group="$Resources:KMS.Global,Definition_Group;"
+     Required="FALSE"
+    Type="Choice" Format="Dropdown">
+    <Default>Draft</Default>
+    <CHOICES>
+      <CHOICE>Draft</CHOICE>
+      <CHOICE>Published</CHOICE>
+      <CHOICE>Abolished</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <!--*********************格林百科****************************************-->
+  <Field ID="{D2831750-C0F8-4816-8B7A-860A3C2A537F}"
+         Name="Field_KMS_Category"
+         StaticName="Field_KMS_Category"
+         DisplayName="$Resources:KMS.Global,Field_KMS_Category;"
+         Group="$Resources:KMS.Global,Definition_Group;"
+         Type="Text"/>
+
+  <Field ID="{16108398-722D-4765-BB3D-19401F23F19A}"
+         Name="Field_KMS_Order"
+         StaticName="Field_KMS_Order"
+         DisplayName="$Resources:KMS.Global,Field_KMS_Order;"
+         Group="$Resources:KMS.Global,Definition_Group;"
+         Type="Integer"/>
+
+  <Field ID="{AA1E6BCB-A408-4810-86E7-3C3B0CEAA836}"
+         Name="Field_KMS_EnglishTitle"
+         StaticName="Field_KMS_EnglishTitle"
+         DisplayName="$Resources:KMS.Global,Field_KMS_EnglishTitle;"
+         Group="$Resources:KMS.Global,Definition_Group;"
+         Type="Text"/>
+
+  <Field
+       ID="{0BDD37A7-EB73-4EBB-8922-AE53F6E87D13}"
+       Name="Field_KMS_HtmlContent"
+       DisplayName="$Resources:KMS.Global,Field_KMS_HtmlContent;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Required="TRUE"
+       UnlimitedLengthInDocumentLibrary="TRUE"
+       Sealed="TRUE" RichText="TRUE" RichTextMode="FullHtml"
+       Type="HTML">
+  </Field>
+  <Field
+       ID="{0DD3EBB6-700C-4194-A3BB-2224374B383F}"
+       Name="Field_KMS_EnglishHtmlContent"
+       DisplayName="$Resources:KMS.Global,Field_KMS_EnglishHtmlContent;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Required="TRUE"
+       UnlimitedLengthInDocumentLibrary="TRUE"
+       Sealed="TRUE" RichText="TRUE" RichTextMode="FullHtml"
+       Type="HTML">
+  </Field>
+
+  <Field ID="{FC4BBCD5-73D3-472F-8499-A448C321849F}"
+  Type="Lookup"
+  SourceID="http://schemas.microsoft.com/sharepoint/v3"
+  DisplayName="$Resources:KMS.Global,Field_KMS_Knowledge;"
+  Required="false"
+  List="Lists/DefinitionLibrary"
+  ShowField="Title"
+  UnlimitedLengthInDocumentLibrary="TRUE"
+  Group="$Resources:EIP.Global,Definition_Group;"
+  StaticName="Field_KMS_Knowledge"
+  Name="Field_KMS_Knowledge" />
+
+
+  <Field ID="{C5CE2659-68D3-4858-8EC8-AD35E40426C3}"
+    Name="Field_KMS_Link"
+    StaticName="Field_KMS_Link"
+    DisplayName="$Resources:KMS.Global,Field_KMS_Link;"
+    Group="$Resources:KMS.Global,Definition_Group;"
+    Type="Text"/>
+
+
+  <Field ID="{1E28055F-055F-4D9A-96B9-8A9E704B9DC9}"
+    Name="Field_KMS_EnglishLink"
+    StaticName="Field_KMS_EnglishLink"
+    DisplayName="$Resources:KMS.Global,Field_KMS_EnglishLink;"
+    Group="$Resources:KMS.Global,Definition_Group;"
+    Type="Text"/>
+
+  <!--*********************中英文对应表****************************************-->
+  <Field
+   ID="{711852D7-1676-4356-970E-FB152C61FB18}"
+   Name="Field_KMS_Model"
+   DisplayName="$Resources:KMS.Global,Field_KMS_Model;"
+   Group="$Resources:KMS.Global,Definition_Group;"
+   Required="FALSE"
+  Type="Choice" Format="Dropdown">
+    <CHOICES>
+      <CHOICE>页首</CHOICE>
+      <CHOICE>左侧导航</CHOICE>
+      <CHOICE>通知公告</CHOICE>
+      <CHOICE>百科</CHOICE>
+      <CHOICE>操作教程</CHOICE>
+      <CHOICE>论坛</CHOICE>
+      <CHOICE>互动管理</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <Field ID="{86D84838-63B5-4EAB-B328-0BFF528698F7}"
+       Name="Field_KMS_ChineseName"
+       StaticName="Field_KMS_ChineseName"
+       DisplayName="$Resources:KMS.Global,Field_KMS_ChineseName;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Type="Text"/>
+
+  <Field ID="{EA7E4195-B765-4B32-83D1-328F1D795A94}"
+       Name="Field_KMS_EnglishName"
+       StaticName="Field_KMS_EnglishName"
+       DisplayName="$Resources:KMS.Global,Field_KMS_EnglishName;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Type="Text"/>
+
+  <!--*********************系统设置列表****************************************-->
+  <Field ID="{A63A99A5-08E8-4124-8914-7D20433091E7}" Name="Field_KMS_DefaultValue"
+         Type="Text"
+         DisplayName="$Resources:KMS.Global,Field_KMS_DefaultValue;"
+         StaticName="Field_KMS_DefaultValue"
+         Required="TRUE"
+         Group="$Resources:KMS.Global,Definition_Group;"/>
+  <Field ID="{D3A2B301-BE44-42D6-B3F6-A0C0976685FF}" Name="Field_KMS_Description"
+         Type="Text"
+         DisplayName="$Resources:KMS.Global,Field_KMS_Description;"
+         StaticName="Field_KMS_Description"
+         Required="FALSE"
+         Group="$Resources:KMS.Global,Definition_Group;"/>
+
+  <!--*********************论坛列表****************************************-->
+
+  <Field ID="{1F318A48-5792-48AF-96A8-E3CA2181F875}" Name="Field_KMS_ForumContent"
+StaticName="Field_KMS_ForumContent"
+DisplayName="$Resources:KMS.Global,Field_KMS_ForumContent;"
+Required="FALSE"
+Group="$Resources:KMS.Global,Definition_Group;"
+RichText="FALSE" NumLines="6"
+Type="Note"/>
+
+  <Field ID="{7FE2F6D4-3AFA-4E2F-B7C5-A1B86C3B4629}"
+Type="Lookup"
+SourceID="http://schemas.microsoft.com/sharepoint/v3"
+DisplayName="$Resources:KMS.Global,Field_KMS_ForumType;"
+Required="false"
+List="Lists/ForumType"
+ShowField="Title"
+UnlimitedLengthInDocumentLibrary="TRUE"
+ Group="$Resources:KMS.Global,Definition_Group;"
+StaticName="Field_KMS_ForumType"
+         Mult="TRUE"
+Name="Field_KMS_ForumType" />
+
+  <Field ID="{F4679106-53D4-43EC-B738-4D4A901D43D4}" Name="Field_KMS_LastComments"
+         StaticName="Field_KMS_LastComments"
+         DisplayName="$Resources:KMS.Global,Field_KMS_LastComments;"
+         Required="FALSE"
+         Group="$Resources:KMS.Global,Definition_Group;"
+         Type="DateTime"
+         Format="DateTime"
+         />
+
+
+  <Field ID="{E6715B59-DDA6-49DC-8CDE-42609AA7D453}"
+       Name="Field_KMS_IsTop"
+       StaticName="Field_KMS_IsTop"
+       DisplayName="$Resources:KMS.Global,Field_KMS_IsTop;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+         Hidden="TRUE"
+       Type="Text"/>
+  <Field ID="{73627517-5A0B-4A33-8BC5-C5E0D301EBE7}"
+       Name="Field_KMS_CommentsCount"
+       StaticName="Field_KMS_CommentsCount"
+       DisplayName="$Resources:KMS.Global,Field_KMS_CommentsCount;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Type="Integer"/>
+  <Field ID="{A86DC423-1EA8-4B53-961D-EE5118E97293}"
+       Name="Field_KMS_ViewCount"
+       StaticName="Field_KMS_ViewCount"
+       DisplayName="$Resources:KMS.Global,Field_KMS_ViewCount;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Type="Integer"/>
+
+
+  <!--*********************首页列表****************************************-->
+  <Field ID="{D696DE7E-5A3A-45D1-80AF-939F2B8A7620}" Name="Field_KMS_GlobalDesc"
+StaticName="Field_KMS_GlobalDesc"
+DisplayName="$Resources:KMS.Global,Field_KMS_GlobalDesc;"
+Required="FALSE"
+Group="$Resources:KMS.Global,Definition_Group;"
+RichText="FALSE" NumLines="6"
+Type="Note"/>
+
+  <Field ID="{C26BCDDD-2166-4E68-B68F-941ABDC6351B}" Name="Field_KMS_GlobalEngDesc"
+StaticName="Field_KMS_GlobalEngDesc"
+DisplayName="$Resources:KMS.Global,Field_KMS_GlobalEngDesc;"
+Required="FALSE"
+Group="$Resources:KMS.Global,Definition_Group;"
+RichText="FALSE" NumLines="6"
+Type="Note"/>
+
+  <Field ID="{F798CD13-721D-4569-89D7-6ADEA994BC92}" Name="Field_KMS_GlobalImg"
+       StaticName="Field_KMS_GlobalImg"
+       DisplayName="$Resources:KMS.Global,Field_KMS_GlobalImg;"
+       Group="$Resources:KMS.Global,Definition_Group;"
+       Type="URL"
+       Format="Image"
+         
+         />
+
+  <Field ID="{4A588178-4D82-4DC8-AA7F-5873DFB79B64}"
+      Name="Field_KMS_GlobalLink"
+      StaticName="Field_KMS_GlobalLink"
+      DisplayName="$Resources:KMS.Global,Field_KMS_GlobalLink;"
+      Group="$Resources:KMS.Global,Definition_Group;"
+      Type="Text"/>
+
+  <!--*********************首页联系人列表****************************************-->
+  <Field ID="{6BD378DE-DD43-4541-B889-562328F77B25}"
+      Name="Field_KMS_AdminName"
+      StaticName="Field_KMS_AdminName"
+      DisplayName="$Resources:KMS.Global,Field_KMS_AdminName;"
+      Group="$Resources:KMS.Global,Definition_Group;"
+      Type="Text"/>
+  <Field ID="{DF549053-5829-4085-BA7A-22B0C57A368D}"
+     Name="Field_KMS_AdminContact"
+     StaticName="Field_KMS_AdminContact"
+     DisplayName="$Resources:KMS.Global,Field_KMS_AdminContact;"
+     Group="$Resources:KMS.Global,Definition_Group;"
+     Type="Text"/>
+
+  <Field ID="{0AE1DEA2-9A65-4C99-9E7D-3FD4207B51B3}"
+    Name="Field_KMS_AdminField1"
+    StaticName="Field_KMS_AdminField1"
+    DisplayName="$Resources:KMS.Global,Field_KMS_AdminField1;"
+    Group="$Resources:KMS.Global,Definition_Group;"
+    Type="Text"/>
+
+  <Field ID="{CF579850-EA3B-43CA-A349-8A956CAB9421}"
+   Name="Field_KMS_AdminField2"
+   StaticName="Field_KMS_AdminField2"
+   DisplayName="$Resources:KMS.Global,Field_KMS_AdminField2;"
+   Group="$Resources:KMS.Global,Definition_Group;"
+   Type="Text"/>
+
+  <Field ID="{E10F21E6-F872-4E0B-B8F1-5185A4AEAF60}"
+   Name="Field_KMS_AdminField3"
+   StaticName="Field_KMS_AdminField3"
+   DisplayName="$Resources:KMS.Global,Field_KMS_AdminField3;"
+   Group="$Resources:KMS.Global,Definition_Group;"
+   Type="Text"/>
+
+  <Field ID="{71CEAF24-7B47-4611-A906-FA3E5C6475A8}"
+  Type="Lookup"
+  SourceID="http://schemas.microsoft.com/sharepoint/v3"
+  DisplayName="$Resources:KMS.Global,Field_KMS_RalatedGlobal;"
+  Required="false"
+  List="Lists/GlobalSlider"
+  ShowField="Title"
+  UnlimitedLengthInDocumentLibrary="TRUE"
+  Group="$Resources:EIP.Global,Definition_Group;"
+  StaticName="Field_KMS_RalatedGlobal"
+  Name="Field_KMS_RalatedGlobal" />
+  <!--*********************导航列表****************************************-->
+  <Field ID="{AF7BEEBF-DF27-4C88-A2C5-43B8858C7181}"
+      Name="Field_KMS_SeriesNo"
+      StaticName="Field_KMS_SeriesNo"
+      DisplayName="$Resources:KMS.Global,Field_KMS_SeriesNo;"
+      Group="$Resources:KMS.Global,Definition_Group;"
+      Type="Text"/>
+
+  <Field ID="{50F9958F-DF38-4D72-A6E4-3B1F44B14025}"
+   Name="Field_KMS_ParentNo"
+   StaticName="Field_KMS_ParentNo"
+   DisplayName="$Resources:KMS.Global,Field_KMS_ParentNo;"
+   Group="$Resources:KMS.Global,Definition_Group;"
+   Type="Text"/>
+
+ 
+
+  <!--*********************Case 管理****************************************-->
+  <Field ID="{10A7B009-C73C-40A5-A871-D51643B982B9}" Name="Field_Case_Content"
+StaticName="Field_Case_Content"
+DisplayName="$Resources:KMS.Global,Field_Case_Content;"
+Required="FALSE"
+Group="$Resources:KMS.Global,Definition_Group;"
+RichText="FALSE" NumLines="6"
+Type="Note"/>
+
+  <Field ID="{1B965416-8071-4D5C-8716-CAD8471EC4BB}" Name="Field_Case_Comments"
+StaticName="Field_Case_Comments"
+DisplayName="$Resources:KMS.Global,Field_Case_Comments;"
+Required="FALSE"
+Group="$Resources:KMS.Global,Definition_Group;"
+RichText="FALSE" NumLines="6"
+Type="Note"/>
+
+  <Field ID="{849FA154-E128-4272-AA47-E53287786891}"
+         Name="Field_Case_EnglishTitle"
+         StaticName="Field_Case_EnglishTitle"
+         DisplayName="$Resources:KMS.Global,Field_Case_EnglishTitle;"
+         Group="$Resources:KMS.Global,Definition_Group;"
+         Type="Text"/>
+
+  <Field ID="{7009EF26-2F0D-4653-89CE-9B87C72630F2}" Name="Field_Case_User"
+ StaticName="Field_Case_User"
+ DisplayName="$Resources:KMS.Global,Field_Case_User;"
+Required="FALSE"
+Group="$Resources:KMS.Global,Definition_Group;"
+ Type="User"
+         UserSelectionMode="0"
+         >
+  </Field>
+
+  <Field ID="{AB8454CA-CA00-41AF-9379-D353A04B165C}"
+Type="Lookup"
+SourceID="http://schemas.microsoft.com/sharepoint/v3"
+DisplayName="$Resources:KMS.Global,Field_Case_Type;"
+Required="false"
+List="Lists/CaseType"
+ShowField="Title"
+UnlimitedLengthInDocumentLibrary="TRUE"
+Group="$Resources:EIP.Global,Definition_Group;"
+StaticName="Field_Case_Type"
+Name="Field_Case_Type" />
+
+  <Field
+     ID="{3DDEA4D2-6BB0-41D9-8AD7-684038AE95CD}"
+     Name="Field_Case_Status"
+     DisplayName="$Resources:KMS.Global,Field_Case_Status;"
+     Group="$Resources:KMS.Global,Definition_Group;"
+     Required="FALSE"
+    Type="Choice" Format="Dropdown">
+    <Default></Default>
+    <CHOICES>
+      <CHOICE>申请中</CHOICE>
+      <CHOICE>已完成</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <Field ID="{A8B5F72F-2920-4090-BE7F-2DB9A38B5CC1}"
+ Name="Field_Email_Subject"
+ StaticName="Field_Email_Subject"
+ DisplayName="$Resources:KMS.Global,Field_Email_Subject;"
+ Group="$Resources:KMS.Global,Definition_Group;"
+ Type="Text"/>
+
+  <Field ID="{83950CAC-AEC1-450D-A46E-F8D03810D6FD}" Name="Field_Email_Content"
+StaticName="Field_Email_Content"
+DisplayName="$Resources:KMS.Global,Field_Email_Content;"
+Required="FALSE"
+Group="$Resources:KMS.Global,Definition_Group;"
+RichText="FALSE" NumLines="6"
+Type="Note"/>
+
+</Elements>

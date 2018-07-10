@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7f5daaa5-2355-44ae-b26c-7a5ee7a759d1}"
+       Name="Field_KMS_Status"
+       StaticName="Field_KMS_Status"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Status;"
+       Type="Choice" 
+       Format="Dropdown"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;">
+       <Default>Draft</Default>
+       <CHOICES>
+         <CHOICE>Draft</CHOICE>
+         <CHOICE>Published</CHOICE>
+         <CHOICE>Abolished</CHOICE>
+       </CHOICES>
+  </Field>
+</Elements>

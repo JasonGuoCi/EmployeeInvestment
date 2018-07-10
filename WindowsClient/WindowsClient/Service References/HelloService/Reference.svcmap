@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="af0e88e0-14a8-47de-ac92-15647a8c99c0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="mex.xsd" MetadataType="Schema" ID="a96dfc0a-0ba7-49ca-aafe-0fbd9a7f5f8a" SourceId="1" SourceUrl="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd1" />
+    <MetadataFile FileName="mex1.xsd" MetadataType="Schema" ID="d1218f0e-8aa2-4bdf-b2e3-453d5e1246a7" SourceId="1" SourceUrl="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd3" />
+    <MetadataFile FileName="mex2.xsd" MetadataType="Schema" ID="1e7377b5-70ba-42e3-b946-d36a4595f135" SourceId="1" SourceUrl="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd0" />
+    <MetadataFile FileName="Global.wsdl" MetadataType="Wsdl" ID="ca61ec09-6aac-467d-8bc2-e19c14f61057" SourceId="1" SourceUrl="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?wsdl" />
+    <MetadataFile FileName="mex.disco" MetadataType="Disco" ID="e9c729aa-d42b-42fd-aec8-b6ccc4beed0d" SourceId="1" SourceUrl="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?disco" />
+    <MetadataFile FileName="mex3.xsd" MetadataType="Schema" ID="f88a7992-8bb9-4bf9-ae3d-eb3f35f0e408" SourceId="1" SourceUrl="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

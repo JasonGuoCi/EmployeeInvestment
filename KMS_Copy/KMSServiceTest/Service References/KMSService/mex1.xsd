@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/KMS_Copy.Model.Models.Announcement" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KMS_Copy.Model.Models.Announcement" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PagingEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LimitRows" type="xs:int" />
+      <xs:element minOccurs="0" name="Search" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TakeCount" type="xs:int" />
+      <xs:element minOccurs="0" name="WikiId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="listname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="weburl" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PagingEntity" nillable="true" type="tns:PagingEntity" />
+</xs:schema>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script src="http://sp13.dev/SiteAssets/jquery-1.10.2.min.js"></script>
+
+    <h2>SharePoint 2013: Consume a custom WCF REST service hosted in SharePoint 2013.</h2>
+    <h3>
+        This is a quick sample to demonstrate calling a custom SharePoint-hosted WCF REST service from a
+        Script Editor Web Part using simple HTML, JavaScript and JQuery.
+    </h3>
+
+    <div>
+        <br />
+        <p id="message">Loading presidents...</p>
+    </div>
+
+    <div id="resultsPanel"></div>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        getPresidentsData();
+    });
+
+function getPresidentsData() {
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + '/_vti_bin/WCF/Test.svc/AddNewItem(Navigation)',
+        method: 'POST',
+        dataType: 'JSON',
+        data: JSON.stringify(),
+        contentType: 'application/json; charset=utf-8',
+        success: function (data) {
+            alert(data);
+        }
+    });
+}
+
+
+</script>
+
+</body>
+</html>

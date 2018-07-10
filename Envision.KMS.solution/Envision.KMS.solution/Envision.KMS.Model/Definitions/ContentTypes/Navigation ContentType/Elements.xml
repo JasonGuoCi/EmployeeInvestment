@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010000D5ECB522A14AF4A513A85398A1EF6A"
+               Name="Navigation ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AA1E6BCB-A408-4810-86E7-3C3B0CEAA836}" Name="Field_KMS_EnglishTitle"/>
+      <FieldRef ID="{4A588178-4D82-4DC8-AA7F-5873DFB79B64}" Name="Field_KMS_GlobalLink"/>
+      <FieldRef ID="{AF7BEEBF-DF27-4C88-A2C5-43B8858C7181}" Name="Field_KMS_SeriesNo"/>
+      <FieldRef ID="{50F9958F-DF38-4D72-A6E4-3B1F44B14025}" Name="Field_KMS_ParentNo"/>
+      <FieldRef ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

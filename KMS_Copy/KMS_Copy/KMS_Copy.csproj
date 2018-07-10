@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8C25DB8-A237-475C-9170-13EBA94F9EA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMS_Copy</RootNamespace>
+    <AssemblyName>KMS_Copy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <TokenReplacementFileExtensions>ashx</TokenReplacementFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\GlobalNavigationCtrl.ascx.cs">
+      <DependentUpon>GlobalNavigationCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\GlobalNavigationCtrl.ascx.designer.cs">
+      <DependentUpon>GlobalNavigationCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\GlobalSearchCtrl.ascx.cs">
+      <DependentUpon>GlobalSearchCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\GlobalSearchCtrl.ascx.designer.cs">
+      <DependentUpon>GlobalSearchCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\HomePage\AnnouncementCtrlCopy.ascx.cs">
+      <DependentUpon>AnnouncementCtrlCopy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\HomePage\AnnouncementCtrlCopy.ascx.designer.cs">
+      <DependentUpon>AnnouncementCtrlCopy.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\HomePage\AnnouncementCtrl.ascx.cs">
+      <DependentUpon>AnnouncementCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\HomePage\AnnouncementCtrl.ascx.designer.cs">
+      <DependentUpon>AnnouncementCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\HomePage\GlobalPageCtrl.ascx.cs">
+      <DependentUpon>GlobalPageCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\HomePage\GlobalPageCtrl.ascx.designer.cs">
+      <DependentUpon>GlobalPageCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucManualContent.ascx.cs">
+      <DependentUpon>ucManualContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucManualContent.ascx.designer.cs">
+      <DependentUpon>ucManualContent.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucUpladDoc.ascx.cs">
+      <DependentUpon>ucUpladDoc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucUpladDoc.ascx.designer.cs">
+      <DependentUpon>ucUpladDoc.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucVideoPlayer.ascx.cs">
+      <DependentUpon>ucVideoPlayer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucVideoPlayer.ascx.designer.cs">
+      <DependentUpon>ucVideoPlayer.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\NavigationCtrl.ascx.cs">
+      <DependentUpon>NavigationCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\NavigationCtrl.ascx.designer.cs">
+      <DependentUpon>NavigationCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Wikipedia\ucWikipedia.ascx.cs">
+      <DependentUpon>ucWikipedia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KMS_Copy\Wikipedia\ucWikipedia.ascx.designer.cs">
+      <DependentUpon>ucWikipedia.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\UploadMoreFile.ashx.cs">
+      <DependentUpon>UploadMoreFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\HomePage\Announcement Webpart\Announcement Webpart.cs" />
+    <Compile Include="WebParts\HomePage\Announcements\Announcements.cs" />
+    <Compile Include="WebParts\HomePage\GlobalPage WebPart\GlobalPage WebPart.cs" />
+    <Compile Include="WebParts\HomePage\Manual\Manual.cs" />
+    <Compile Include="WebParts\HomePage\VideoPlayer\VideoPlayer.cs" />
+    <Compile Include="WebParts\HomePage\Wikipedia Webpart\Wikipedia Webpart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{24cacc79-7620-4d93-afaf-aa97141b676b}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\KMS_Copy Web\KMS_Copy Web.feature">
+      <FeatureId>{6e6b278d-97bf-4f16-85a9-345569ae50c6}</FeatureId>
+    </None>
+    <None Include="Features\KMS_Copy Site\KMS_Copy Site.feature">
+      <FeatureId>{8bab8e65-badd-4b17-bd4f-1eed1f79840c}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\KMS_Copy\Global\font\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\KMS_Copy\Global\font\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\KMS_Copy\Global\font\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\KMS_Copy\Global\font\revicons.eot" />
+    <None Include="Layouts\KMS_Copy\Global\font\revicons.ttf" />
+    <None Include="Layouts\KMS_Copy\Global\font\revicons.woff" />
+    <None Include="Layouts\KMS_Copy\Scripts\ckplayer\share\Thumbs.db" />
+    <None Include="Layouts\KMS_Copy\Scripts\jwplayer\jw-icons.ttf" />
+    <None Include="Layouts\KMS_Copy\Scripts\jwplayer\jw-icons.woff" />
+    <None Include="Layouts\KMS_Copy\Scripts\tinymce\langs\readme.md" />
+    <None Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <None Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <None Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <None Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <None Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <None Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <None Include="Layouts\KMS_Copy\Styles\themes\nav\style.less" />
+    <None Include="Layouts\KMS_Copy\Styles\themes\nav\Thumbs.db" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c96f3011-2e0f-4703-978e-bf5fd0f1bcf4}</SharePointProjectItemId>
+    </None>
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucManualContent.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucVideoPlayer.ascx" />
+    <Content Include="Layouts\KMS_Copy\Scripts\HomePage\Manual.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\HomePage\Video.js" />
+    <Content Include="Layouts\UploadMoreFile.ashx" />
+    <None Include="Modules\GlobalPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6e89e27d-35e8-44ef-a010-583edd1df06a}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPage\Envision.KMS.Basic.master" />
+    <None Include="Modules\MasterPage\Envision.KMS.Global.master" />
+    <None Include="Modules\MasterPage\Envision.KMS.master" />
+    <None Include="Modules\MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c921a786-ed30-439b-b3a7-c2c75caccb23}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\ProjectPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b16ade3e-3d78-4bb6-9f85-05b44f889760}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{97a6f5e9-f93b-4b49-b4dc-30d3dda210f0}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\HomePage\Announcement Webpart\Announcement Webpart.webpart" />
+    <None Include="WebParts\HomePage\Announcement Webpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28e812b7-5e5c-494f-a5b2-dbb3930f065b}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\Announcements\Announcements.webpart" />
+    <None Include="WebParts\HomePage\Announcements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b132c5ac-f028-4a18-8462-1924fd9e626f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\GlobalPage WebPart\GlobalPage WebPart.webpart" />
+    <None Include="WebParts\HomePage\GlobalPage WebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{539c9309-821a-487e-941f-186af93acd97}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\Manual\Manual.webpart" />
+    <None Include="WebParts\HomePage\Manual\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb59608d-e308-420d-b3e9-898bbe42785b}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\VideoPlayer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50b0b4ce-6aa1-4d2b-91ee-9435f15a1001}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\VideoPlayer\VideoPlayer.webpart" />
+    <None Include="WebParts\HomePage\Wikipedia Webpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6afe5425-9f90-4ca0-8588-8b7437be6cff}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\Wikipedia Webpart\Wikipedia Webpart.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\GlobalNavigationCtrl.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\GlobalSearchCtrl.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\HomePage\AnnouncementCtrlCopy.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\HomePage\AnnouncementCtrl.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\HomePage\GlobalPageCtrl.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\Manual\ucUpladDoc.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\NavigationCtrl.ascx" />
+    <Content Include="CONTROLTEMPLATES\KMS_Copy\Wikipedia\ucWikipedia.ascx" />
+    <Content Include="Features\KMS_Copy Web\KMS_Copy Web.Template.xml">
+      <DependentUpon>KMS_Copy Web.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\KMS_Copy Site\KMS_Copy Site.Template.xml">
+      <DependentUpon>KMS_Copy Site.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\KMS_Copy\Global\font\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\KMS_Copy\Global\font\revicons.svg" />
+    <Content Include="Layouts\KMS_Copy\Global\img\5.jpg" />
+    <Content Include="Layouts\KMS_Copy\Global\img\6.jpg" />
+    <Content Include="Layouts\KMS_Copy\Global\img\7.jpg" />
+    <Content Include="Layouts\KMS_Copy\Global\img\8.jpg" />
+    <Content Include="Layouts\KMS_Copy\Global\img\9.jpg" />
+    <Content Include="Layouts\KMS_Copy\Global\img\large_left.png" />
+    <Content Include="Layouts\KMS_Copy\Global\img\large_right.png" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\app.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\App2.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\html5shiv.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\jquery.themepunch.revolution.min.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\jquery.themepunch.tools.min.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\placeholder-IE-fixes.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\respond.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\revolution-slider.js" />
+    <Content Include="Layouts\KMS_Copy\Global\scripts\style-switcher.js" />
+    <Content Include="Layouts\KMS_Copy\Global\styles\animate.css" />
+    <Content Include="Layouts\KMS_Copy\Global\styles\app.css" />
+    <Content Include="Layouts\KMS_Copy\Global\styles\blocks.css" />
+    <Content Include="Layouts\KMS_Copy\Global\styles\settings-ie8.css" />
+    <Content Include="Layouts\KMS_Copy\Global\styles\settings.css" />
+    <Content Include="Layouts\KMS_Copy\Global\styles\style-switcher.css" />
+    <Content Include="Layouts\KMS_Copy\Global\styles\style.css" />
+    <Content Include="Layouts\KMS_Copy\Images\AnnoucementMenu.png" />
+    <Content Include="Layouts\KMS_Copy\Images\background_darkblue.png" />
+    <Content Include="Layouts\KMS_Copy\Images\background_lightblue.png" />
+    <Content Include="Layouts\KMS_Copy\Images\background_lightgreen.png" />
+    <Content Include="Layouts\KMS_Copy\Images\background_orange.png" />
+    <Content Include="Layouts\KMS_Copy\Images\bg-1.png" />
+    <Content Include="Layouts\KMS_Copy\Images\browse-btn-eng.png" />
+    <Content Include="Layouts\KMS_Copy\Images\browse-btn.png" />
+    <Content Include="Layouts\KMS_Copy\Images\comment.gif" />
+    <Content Include="Layouts\KMS_Copy\Images\docu_icon01.PNG" />
+    <Content Include="Layouts\KMS_Copy\Images\docu_icon02.png" />
+    <Content Include="Layouts\KMS_Copy\Images\docu_icon03.PNG" />
+    <Content Include="Layouts\KMS_Copy\Images\docu_icon04.PNG" />
+    <Content Include="Layouts\KMS_Copy\Images\docu_icon05.PNG" />
+    <Content Include="Layouts\KMS_Copy\Images\forum-bg.png" />
+    <Content Include="Layouts\KMS_Copy\Images\global.png" />
+    <Content Include="Layouts\KMS_Copy\Images\Icon_circle.png" />
+    <Content Include="Layouts\KMS_Copy\Images\icon_fold_paper.png" />
+    <Content Include="Layouts\KMS_Copy\Images\icon_open_book.png" />
+    <Content Include="Layouts\KMS_Copy\Images\Icon_Post.png" />
+    <Content Include="Layouts\KMS_Copy\Images\Icon_Post20.png" />
+    <Content Include="Layouts\KMS_Copy\Images\Icon_Top.png" />
+    <Content Include="Layouts\KMS_Copy\Images\Icon_Top20.png" />
+    <Content Include="Layouts\KMS_Copy\Images\left_round.png" />
+    <Content Include="Layouts\KMS_Copy\Images\logo_envision.png" />
+    <Content Include="Layouts\KMS_Copy\Images\mobile.png" />
+    <Content Include="Layouts\KMS_Copy\Images\photo.jpg" />
+    <Content Include="Layouts\KMS_Copy\Images\profile.png" />
+    <Content Include="Layouts\KMS_Copy\Images\video-cover.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\audiojs\audio.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\audiojs\audiojs.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\audiojs\player-graphics.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\backstretch-ini.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\bootstrap.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\ckplayer.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\ckplayer.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\ckplayer.xml" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\language.xml" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\related.xml" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share.xml" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\feixin.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\google.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\kaixin001.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\msn.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\qq.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\qq2.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\qzone.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\rr.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\sina.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\sohu.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\share\tianya.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\style.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\s_6.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\ckplayer\s_7.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\HomePage\Announcement.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\HomePage\Header.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\HomePage\homepage.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\HomePage\slidereveal.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\HomePage\Wikipedia.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\iscroll.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jplayer\jquery.jplayer.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jplayer\jquery.jplayer.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jquery-1.9.1.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jquery-ui-1.10.4.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jquery.backstretch.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jquery.nicescroll.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jquery.pagination.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jquery.zclip.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jstree.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\jwplayer.flash.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\jwplayer.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\polyfills.base64.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\polyfills.promise.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\provider.cast.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\provider.caterpillar.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\provider.shaka.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\provider.youtube.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\beelden.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\bekle.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\five.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\glow.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\roundster.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\seven.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\six.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\stormtrooper.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\jwplayer\skins\vapor.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\knockout-2.2.1.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\script-base.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\langs\ch.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\langs\en.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\langs\uk.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\langs\zh.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\langs\zh_CN.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\license.txt" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\css\advhr.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\js\rule.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advhr\rule.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\css\advimage.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\image.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\img\sample.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\js\image.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advimage\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\css\advlink.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\js\advlink.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlink\link.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\autosave\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\directionality\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\emotions.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\js\emotions.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\emotions\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\dialog.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\dialog.html" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\img\example.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\js\dialog.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\langs\en.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\fullpage.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\iespell\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\inlinepopups\template.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\layer\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\css\content.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\css\media.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\img\flash.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\img\flv_player.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\img\quicktime.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\img\realmedia.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\img\shockwave.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\img\trans.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\img\windowsmedia.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\js\embed.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\js\media.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\media.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\pagebreak\css\content.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\pagebreak\img\trans.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\js\pastetext.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\js\pasteword.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\pastetext.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\pasteword.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\preview\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\preview\example.html" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\preview\jscripts\embed.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\preview\preview.html" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\print\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\print\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\safari\blank.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\safari\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\safari\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\save\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\save\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\spellchecker\css\content.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\css\props.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\js\props.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\style\props.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\cell.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\css\cell.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\css\row.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\css\table.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\js\cell.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\js\merge_cells.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\js\row.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\js\table.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\merge_cells.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\row.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\table\table.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\blank.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\css\template.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\js\template.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\template\template.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\toc\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\langs\ch_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\plugins\xhtmlxtras\langs\zh_dlg.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\img\Uploadicon.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\img\Uploadicon1.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\themes\inlite\theme.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\themes\modern\theme.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\tinymce.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\utils\editable_selects.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\utils\form_utils.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\utils\mctabs.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\tinymce\utils\validate.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\uploadify\jquery.uploadify.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\uploadify\jquery.uploadify.min.js" />
+    <Content Include="Layouts\KMS_Copy\Scripts\uploadify\uploadify-cancel.png" />
+    <Content Include="Layouts\KMS_Copy\Scripts\uploadify\uploadify.swf" />
+    <Content Include="Layouts\KMS_Copy\Styles\bootstrap.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\header-default.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\css\jplayer.blue.monday.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\image\jplayer.blue.monday.jpg" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\image\jplayer.blue.monday.seeking.gif" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\image\jplayer.blue.monday.video.play.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.audio.playlist.html" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.audio.single.html" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.audio.stream.html" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.video.playlist.html" />
+    <Content Include="Layouts\KMS_Copy\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.video.single.html" />
+    <Content Include="Layouts\KMS_Copy\Styles\jquery-ui-1.10.4.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\Masterpage.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\Site.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\Site_Copy.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\default\32px.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\default\40px.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\default\style.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\default\style.min.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\default\throbber.gif" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\32px.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\40px.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\down.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\icon_fold.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\icon_open.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\style.css" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\throbber.gif" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\tree-link.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\themes\nav\up.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\uploadify\uploadify-cancel.png" />
+    <Content Include="Layouts\KMS_Copy\Styles\uploadify\uploadify.css" />
+    <Content Include="Modules\GlobalPage\Elements.xml" />
+    <Content Include="Modules\GlobalPage\GlobalPage.aspx" />
+    <Content Include="Modules\GlobalPage\Sample.txt" />
+    <Content Include="Modules\MasterPage\Elements.xml" />
+    <Content Include="Modules\MasterPage\Sample.txt" />
+    <Content Include="Modules\ProjectPages\Elements.xml" />
+    <Content Include="Modules\ProjectPages\LayoutPage.aspx" />
+    <Content Include="Modules\ProjectPages\VideoPlayer.aspx" />
+    <Content Include="Modules\ProjectPages\Wikipedia.aspx" />
+    <Content Include="Modules\ProjectPages\Home - Copy.aspx" />
+    <Content Include="Modules\ProjectPages\Home.aspx" />
+    <Content Include="Modules\ProjectPages\Sample.txt" />
+    <Content Include="WebParts\HomePage\Announcement Webpart\Elements.xml" />
+    <Content Include="WebParts\HomePage\Announcements\Elements.xml" />
+    <Content Include="WebParts\HomePage\GlobalPage WebPart\Elements.xml" />
+    <Content Include="WebParts\HomePage\Manual\Elements.xml" />
+    <Content Include="WebParts\HomePage\VideoPlayer\Elements.xml" />
+    <Content Include="WebParts\HomePage\Wikipedia Webpart\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

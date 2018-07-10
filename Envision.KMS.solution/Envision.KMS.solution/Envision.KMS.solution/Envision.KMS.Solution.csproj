@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33E2D622-FB1D-4506-A770-3436C64F4FDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Envision.KMS.solution</RootNamespace>
+    <AssemblyName>Envision.KMS.solution</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\CaseManagement\CaseManagementCtrl.ascx.cs">
+      <DependentUpon>CaseManagementCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\CaseManagement\CaseManagementCtrl.ascx.designer.cs">
+      <DependentUpon>CaseManagementCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Forum\ForumContentCtrl.ascx.cs">
+      <DependentUpon>ForumContentCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Forum\ForumContentCtrl.ascx.designer.cs">
+      <DependentUpon>ForumContentCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\GlobalNavigationCtrl.ascx.cs">
+      <DependentUpon>GlobalNavigationCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\GlobalNavigationCtrl.ascx.designer.cs">
+      <DependentUpon>GlobalNavigationCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\GlobalSearchCtrl.ascx.cs">
+      <DependentUpon>GlobalSearchCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\GlobalSearchCtrl.ascx.designer.cs">
+      <DependentUpon>GlobalSearchCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\HomePage\AnnouncementCtrl.ascx.cs">
+      <DependentUpon>AnnouncementCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\HomePage\AnnouncementCtrl.ascx.designer.cs">
+      <DependentUpon>AnnouncementCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\HomePage\GlobalPageCtrl.ascx.cs">
+      <DependentUpon>GlobalPageCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\HomePage\GlobalPageCtrl.ascx.designer.cs">
+      <DependentUpon>GlobalPageCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Manual\ManualContentCtrl.ascx.cs">
+      <DependentUpon>ManualContentCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Manual\ManualContentCtrl.ascx.designer.cs">
+      <DependentUpon>ManualContentCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Manual\ManualHtmlDetailCtrl.ascx.cs">
+      <DependentUpon>ManualHtmlDetailCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Manual\ManualHtmlDetailCtrl.ascx.designer.cs">
+      <DependentUpon>ManualHtmlDetailCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Manual\VideoPlayerCtrl.ascx.cs">
+      <DependentUpon>VideoPlayerCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Manual\VideoPlayerCtrl.ascx.designer.cs">
+      <DependentUpon>VideoPlayerCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\NavigationCtrl.ascx.cs">
+      <DependentUpon>NavigationCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\NavigationCtrl.ascx.designer.cs">
+      <DependentUpon>NavigationCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Wikipedia\WikipediaCtrl.ascx.cs">
+      <DependentUpon>WikipediaCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Envision.KMS.Solution\Wikipedia\WikipediaCtrl.ascx.designer.cs">
+      <DependentUpon>WikipediaCtrl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Envision.KMS.Solution\Handler\UserImageDelegate.aspx.cs">
+      <DependentUpon>UserImageDelegate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Envision.KMS.Solution\Handler\UserImageDelegate.aspx.designer.cs">
+      <DependentUpon>UserImageDelegate.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\HomePage\Announcement Webpart\Announcement Webpart.cs" />
+    <Compile Include="WebParts\HomePage\CaseManagement WebPart\CaseManagement WebPart.cs" />
+    <Compile Include="WebParts\HomePage\ForumContent WebPart\ForumContent WebPart.cs" />
+    <Compile Include="WebParts\HomePage\GlobalPage WebPart\GlobalPage WebPart.cs" />
+    <Compile Include="WebParts\HomePage\Manual WebPart\Manual WebPart.cs" />
+    <Compile Include="WebParts\HomePage\ManualDetail WebPart\ManualDetail WebPart.cs" />
+    <Compile Include="WebParts\HomePage\VideoPlayer Webpart\VideoPlayer Webpart.cs" />
+    <Compile Include="WebParts\HomePage\Wikipedia Webpart\Wikipedia Webpart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONFIG\Focuswin\log4net.config" />
+    <None Include="CONFIG\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{17d6c399-689a-4c63-b30f-c6d3ddd9b2fb}</SharePointProjectItemId>
+    </None>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3981bf0-e108-4ced-9594-47a9d7c53ea7}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Envision.KMS.Solution Site\Envision.KMS.Solution Site.feature">
+      <FeatureId>{0f078a1e-f42e-47df-a3dc-29460d0e85e9}</FeatureId>
+    </None>
+    <None Include="Features\Envision.KMS.Solution Web\Envision.KMS.Solution Web.feature">
+      <FeatureId>{e5a46b99-4c09-48a0-84f9-3b54ef5e2ebd}</FeatureId>
+    </None>
+    <None Include="Features\Envision.KMS.Solution GlobalWeb\Envision.KMS.Solution GlobalWeb.feature">
+      <FeatureId>{98e2021b-8f53-40f8-8831-17c5d6ab801e}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\Envision.KMS.Solution\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\Envision.KMS.Solution\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\Envision.KMS.Solution\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\Envision.KMS.Solution\Global\font\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\Envision.KMS.Solution\Global\font\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\Envision.KMS.Solution\Global\font\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\Envision.KMS.Solution\Global\font\revicons.eot" />
+    <None Include="Layouts\Envision.KMS.Solution\Global\font\revicons.ttf" />
+    <None Include="Layouts\Envision.KMS.Solution\Global\font\revicons.woff" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\Thumbs.db" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\jw-icons.ttf" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\jw-icons.woff" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\langs\readme.md" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <None Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <None Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\style.less" />
+    <None Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\Thumbs.db" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{770dc7ab-d997-48a1-8cb9-aa75f58537f0}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\GlobalPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6781f24-f27a-43a4-a1b7-1fe003ce23fa}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\ImageSource\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f6a9bf9-1b91-473f-8414-095f6c9813ea}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPage\Envision.KMS.Global.master" />
+    <None Include="Modules\MasterPage\Envision.KMS.Basic1.master" />
+    <None Include="Modules\MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e02a5665-c78c-4039-adaa-7be6e4814f6a}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPage\Envision.KMS.master" />
+    <None Include="Modules\ProjectPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{828a7a50-783f-4116-a637-e0868ac86575}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{05f10e5d-b030-4b79-b077-be28c7d90697}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\HomePage\Announcement Webpart\Announcement Webpart.webpart" />
+    <None Include="WebParts\HomePage\Announcement Webpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a67e71a7-71f3-4d76-9c89-275127ee4730}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\CaseManagement WebPart\CaseManagement WebPart.webpart" />
+    <None Include="WebParts\HomePage\CaseManagement WebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c0a7e1f9-083a-46ae-86b1-ecb21d502dcd}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\ForumContent WebPart\ForumContent WebPart.webpart" />
+    <None Include="WebParts\HomePage\ForumContent WebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{07df9fa9-e02f-40e9-a862-cb0f466c98b9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\GlobalPage WebPart\GlobalPage WebPart.webpart" />
+    <None Include="WebParts\HomePage\GlobalPage WebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b9861c0a-5ec1-4e87-8da2-bd70517e67bc}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\Manual WebPart\Manual WebPart.webpart" />
+    <None Include="WebParts\HomePage\Manual WebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e580a56f-f503-45e1-b1e9-aec66e0063e0}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\ManualDetail WebPart\ManualDetail WebPart.webpart" />
+    <None Include="WebParts\HomePage\ManualDetail WebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50a6a999-991e-48bf-b289-eb2f49ada04a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\VideoPlayer Webpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{29136ca2-d185-4b02-864f-c3869c7b3c32}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\VideoPlayer Webpart\VideoPlayer Webpart.webpart" />
+    <None Include="WebParts\HomePage\Wikipedia Webpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{efd09d30-1a4f-41c6-bf37-c378a491bcbc}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HomePage\Wikipedia Webpart\Wikipedia Webpart.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Envision.KMS.Model\Envision.KMS.Model.csproj">
+      <Project>{ee9a0d4e-5b84-46c3-904d-0d61cdf30988}</Project>
+      <Name>Envision.KMS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlTemplates\Envision.KMS.Solution\CaseManagement\CaseManagementCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\Forum\ForumContentCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\GlobalNavigationCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\GlobalSearchCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\HomePage\AnnouncementCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\HomePage\GlobalPageCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\Manual\ManualContentCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\Manual\ManualHtmlDetailCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\Manual\VideoPlayerCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\NavigationCtrl.ascx" />
+    <Content Include="ControlTemplates\Envision.KMS.Solution\Wikipedia\WikipediaCtrl.ascx" />
+    <Content Include="Features\Envision.KMS.Solution Site\Envision.KMS.Solution Site.Template.xml">
+      <DependentUpon>Envision.KMS.Solution Site.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Envision.KMS.Solution Web\Envision.KMS.Solution Web.Template.xml">
+      <DependentUpon>Envision.KMS.Solution Web.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Envision.KMS.Solution GlobalWeb\Envision.KMS.Solution GlobalWeb.Template.xml">
+      <DependentUpon>Envision.KMS.Solution GlobalWeb.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Envision.KMS.Solution\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\font\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\font\revicons.svg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\img\5.jpg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\img\6.jpg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\img\7.jpg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\img\8.jpg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\img\9.jpg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\img\large_left.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\img\large_right.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\app.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\html5shiv.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\jquery.themepunch.revolution.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\jquery.themepunch.tools.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\placeholder-IE-fixes.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\respond.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\revolution-slider.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\scripts\style-switcher.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\styles\animate.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\styles\app.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\styles\blocks.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\styles\settings-ie8.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\styles\settings.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\styles\style-switcher.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Global\styles\style.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Handler\UserImageDelegate.aspx" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\AnnoucementMenu.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\background_darkblue.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\background_lightblue.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\background_lightgreen.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\background_orange.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\bg-1.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\comment.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\docu_icon01.PNG" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\docu_icon02.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\docu_icon03.PNG" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\docu_icon04.PNG" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\docu_icon05.PNG" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\forum-bg.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\global.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\Icon_circle.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\icon_fold_paper.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\icon_open_book.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\Icon_Post.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\Icon_Post20.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\Icon_Top.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\Icon_Top20.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\left_round.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\logo_envision.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\mobile.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\photo.jpg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\profile.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Images\video-cover.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\ckplayer.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\ckplayer.swf" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\ckplayer.xml" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\language.xml" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\related.xml" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share.xml" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\feixin.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\google.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\kaixin001.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\msn.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\qq.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\qq2.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\qzone.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\rr.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\sina.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\sohu.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\share\tianya.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\ckplayer\style.swf" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\Casemanagement.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\slidereveal.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\Video.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\backstretch-ini.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\bootstrap.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\Header.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\Announcement.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\Forum.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\ManualDetail.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\Manual.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\Wikipedia.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\iscroll.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jplayer\jquery.jplayer.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jplayer\jquery.jplayer.swf" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jquery-ui-1.10.4.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jquery.backstretch.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jquery.nicescroll.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jquery.zclip.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jstree.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\jwplayer.flash.swf" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\jwplayer.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\polyfills.base64.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\polyfills.promise.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\provider.cast.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\provider.caterpillar.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\provider.shaka.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\provider.youtube.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\beelden.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\bekle.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\five.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\glow.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\roundster.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\seven.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\six.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\stormtrooper.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jwplayer\skins\vapor.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\script-base.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\HomePage\homepage.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jquery-1.9.1.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\jquery.pagination.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\knockout-2.2.1.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\license.txt" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\example\dialog.html" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\themes\modern\theme.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Scripts\tinymce\tinymce.min.js" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\bootstrap.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\header-default.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\css\jplayer.blue.monday.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\image\jplayer.blue.monday.jpg" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\image\jplayer.blue.monday.seeking.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\image\jplayer.blue.monday.video.play.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.audio.playlist.html" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.audio.single.html" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.audio.stream.html" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.video.playlist.html" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jplayer\blue.monday\mustache\jplayer.blue.monday.video.single.html" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\jquery-ui-1.10.4.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\Masterpage.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\Site.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\default\32px.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\default\40px.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\default\style.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\default\style.min.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\default\throbber.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\32px.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\40px.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\down.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\icon_fold.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\icon_open.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\style.css" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\throbber.gif" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\tree-link.png" />
+    <Content Include="Layouts\Envision.KMS.Solution\Styles\themes\nav\up.png" />
+    <Content Include="Modules\GlobalPage\Elements.xml" />
+    <Content Include="Modules\GlobalPage\GlobalPage.aspx" />
+    <Content Include="Modules\ImageSource\bg.jpg" />
+    <Content Include="Modules\ImageSource\Elements.xml" />
+    <Content Include="Modules\MasterPage\Elements.xml" />
+    <Content Include="Modules\ProjectPages\Elements.xml" />
+    <Content Include="Modules\ProjectPages\VideoPlayer.aspx" />
+    <Content Include="Modules\ProjectPages\LayoutPage.aspx" />
+    <Content Include="Modules\ProjectPages\CaseManagement.aspx" />
+    <Content Include="Modules\ProjectPages\Wikipedia.aspx" />
+    <Content Include="Modules\ProjectPages\Home.aspx" />
+    <Content Include="WebParts\HomePage\Announcement Webpart\Elements.xml" />
+    <Content Include="WebParts\HomePage\CaseManagement WebPart\Elements.xml" />
+    <Content Include="WebParts\HomePage\ForumContent WebPart\Elements.xml" />
+    <Content Include="WebParts\HomePage\GlobalPage WebPart\Elements.xml" />
+    <Content Include="WebParts\HomePage\Manual WebPart\Elements.xml" />
+    <Content Include="WebParts\HomePage\ManualDetail WebPart\Elements.xml" />
+    <Content Include="WebParts\HomePage\VideoPlayer Webpart\Elements.xml" />
+    <Content Include="WebParts\HomePage\Wikipedia Webpart\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

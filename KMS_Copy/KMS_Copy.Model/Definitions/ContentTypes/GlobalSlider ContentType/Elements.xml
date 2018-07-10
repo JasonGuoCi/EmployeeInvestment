@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- 父内容类型: Item (0x01) -->
+  <ContentType ID="0x01004FC6D957A3BE4A158339E6AC8E012B4F" Name="GlobalSlider ContentType" Group="KMS Content Type" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{2cd4701f-324d-434c-b3b2-48f84f3e1750}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishTitle;" Name="Field_KMS_EnglishTitle" />
+      <FieldRef ID="{1653d888-9d0a-42e3-bcde-23df739a5813}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_GlobalDesc;" Name="Field_KMS_GlobalDesc" NumLines="6" />
+      <FieldRef ID="{4f079327-f07a-4152-b950-ab073e13599c}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_GlobalEngDesc;" Name="Field_KMS_GlobalEngDesc" NumLines="6" />
+      <FieldRef ID="{51b35f51-f322-4f7d-bf2d-9499694aaf24}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_GlobalImg;" Name="Field_KMS_GlobalImg" Format="Image" />
+      <FieldRef ID="{99a2d4f9-65bb-4723-a7ba-f22a444c09b9}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_GlobalLink;" Name="Field_KMS_GlobalLink" />
+      <FieldRef ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;" Name="Field_KMS_Order" />
+      <FieldRef ID="{7f5daaa5-2355-44ae-b26c-7a5ee7a759d1}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Status;" Name="Field_KMS_Status" Format="Dropdown" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

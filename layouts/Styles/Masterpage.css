@@ -1,0 +1,166 @@
+﻿html,body{ margin:0; height:100%; }
+
+.focuswin-hidden {
+    display: none;
+}
+
+.focuswin-diver {
+    border: 1px solid #eee;
+}
+
+#suiteBar {
+    display: block;
+}
+
+#s4-ribbonrow {
+    display: block;
+}
+
+#main {
+    min-width: 1024px;
+}
+
+.project-frame-main video {
+    width: 100%;
+}
+
+.project-content-container {
+    min-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ms-webpartzone-cell {
+    margin-bottom: 0px;
+}
+
+.focuswin-clear {
+    clear: both;
+}
+/*reset*/
+li, ul, p {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font: 12px/1.6em '微软雅黑';
+    -webkit-text-size-adjust: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+    background-size: 100%;
+    /*max-width: 100%;*/
+}
+
+*:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*public*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.hz {
+    height: auto;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+    zoom: 1;
+}
+
+    .clear:after {
+        content: '';
+        display: inline-block;
+        clear: both;
+    }
+
+.w1200 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+#s4-bodyContainer {
+    padding-bottom: 0px;
+}
+
+#suiteBar {
+    display: none;
+}
+
+
+.pub_title {
+    line-height: 46px;
+    height: 46px;
+}
+
+    .pub_title > span {
+        display: inline-block;
+        padding: 0 10px;
+        border-top: 6px solid #1493DA;
+        line-height: 40px;
+        color: #333;
+        font-size: 18px;
+        float: left;
+        cursor: pointer;
+    }
+
+    .pub_title > a {
+        display: inline-block;
+        float: right;
+        padding-right: 10px;
+        color: #1493DA;
+        font-size: 14px;
+    }
+
+    .pub_title > span.bordernone {
+        border-top: 6px solid #fff !important;
+    }
+
+
+#s4-workspace {
+}
+
+
+button {
+    min-width: 10px;
+}
+
+.search-input-height {
+height:25px;
+}
+

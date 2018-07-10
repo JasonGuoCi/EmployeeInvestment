@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f50af27e-0c9b-4b34-aa98-a8e12d33e368" solutionId="f50af27e-0c9b-4b34-aa98-a8e12d33e368" resetWebServer="false" sharePointProductVersion="15.0" name="kMS_Copy.Service" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="9d9af7ed-dda9-49c9-ab93-e1d11c40a74c" />
+  </projectItems>
+</package>

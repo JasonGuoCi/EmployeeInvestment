@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01000F0897A2595843B4A89A32A9F722BE3F" Name="Forum ContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{1F318A48-5792-48AF-96A8-E3CA2181F875}" Name="Field_KMS_ForumContent" />
+      <FieldRef ID="{7FE2F6D4-3AFA-4E2F-B7C5-A1B86C3B4629}" Name="Field_KMS_ForumType" />
+      <FieldRef ID="{E6715B59-DDA6-49DC-8CDE-42609AA7D453}" Name="Field_KMS_IsTop" />
+      <FieldRef ID="{73627517-5A0B-4A33-8BC5-C5E0D301EBE7}" Name="Field_KMS_CommentsCount" />
+      <FieldRef ID="{A86DC423-1EA8-4B53-961D-EE5118E97293}" Name="Field_KMS_ViewCount" />
+      <FieldRef ID="{F4679106-53D4-43EC-B738-4D4A901D43D4}" Name="Field_KMS_LastComments" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- 父内容类型: Item (0x01) -->
+  <ContentType ID="0x0100AB1043BE3A9E4CCE88FDBF315FBFF9B4" Name="Wikipedia ContentType" Group="KMS Content Type" Description="Wikipedia ContentType" Inherits="TRUE" Version="0" Hidden="FALSE">
+    <FieldRefs>
+      <FieldRef ID="{2cd4701f-324d-434c-b3b2-48f84f3e1750}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishTitle;" Name="Field_KMS_EnglishTitle" />
+      <FieldRef ID="{ea70bc7b-51b1-4188-92c6-341d3f113562}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_HtmlContent;" Required="FALSE" Name="Field_KMS_HtmlContent" Sealed="TRUE" />
+      <FieldRef ID="{0419c76a-27f2-4cb4-9ffd-0775ab151dbf}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishHtmlContent;" Required="FALSE" Name="Field_KMS_EnglishHtmlContent" Sealed="TRUE" />
+      <FieldRef ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;" Name="Field_KMS_Order" />
+      <FieldRef ID="{f66f4538-ca0a-4254-9aca-10e91c48d18a}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Knowledge;" Required="false" Name="Field_KMS_Knowledge" />
+      <FieldRef ID="{7f5daaa5-2355-44ae-b26c-7a5ee7a759d1}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Status;" Name="Field_KMS_Status" Format="Dropdown" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

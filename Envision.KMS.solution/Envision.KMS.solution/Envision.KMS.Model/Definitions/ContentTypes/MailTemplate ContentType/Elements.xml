@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100F93C317FDC304E9E9E48F4BC1C6B6299" Name="MailTemplate ContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{A8B5F72F-2920-4090-BE7F-2DB9A38B5CC1}" DisplayName="$Resources:KMS.Global,Field_Email_Subject;" Name="Field_Email_Subject" />
+      <FieldRef ID="{83950CAC-AEC1-450D-A46E-F8D03810D6FD}" DisplayName="$Resources:KMS.Global,Field_Email_Content;" Name="Field_Email_Content" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

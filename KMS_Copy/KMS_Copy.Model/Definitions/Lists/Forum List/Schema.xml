@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Forum List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Forum List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01009C41461F68AA4E5CA6458D764587DFDC" Name="Forum ContentType" Group="KMS Content Type" Description="Forum ContentType" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{4f2b14cb-1966-434c-bfdd-c2211aa5afad}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ForumContent;" Required="FALSE" Name="Field_KMS_ForumContent" NumLines="6" /><FieldRef ID="{dd10b4bb-5c07-419a-a429-16337f750459}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ForumType;" Required="false" Name="Field_KMS_ForumType" /><FieldRef ID="{4eeae98d-78cd-4d70-aa1b-bc2cd64424b2}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_IsTop;" Hidden="TRUE" Name="Field_KMS_IsTop" /><FieldRef ID="{2ab8d938-0362-4cf2-8585-7bba97ca0a12}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_CommentsCount;" Name="Field_KMS_CommentsCount" /><FieldRef ID="{21badfda-bc9d-4922-8700-88b74e10a221}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ViewCount;" Name="Field_KMS_ViewCount" /><FieldRef ID="{308e242b-da75-43d1-b302-5c80974ee62b}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_LastComments;" Required="FALSE" Name="Field_KMS_LastComments" Format="DateTime" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{4f2b14cb-1966-434c-bfdd-c2211aa5afad}" Name="Field_KMS_ForumContent" StaticName="Field_KMS_ForumContent" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ForumContent;" Required="FALSE" Group="$Resources:KMS_Copy.Global,Definition_Group;" RichText="FALSE" NumLines="6" Type="Note" /><Field ID="{dd10b4bb-5c07-419a-a429-16337f750459}" Type="Lookup" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ForumType;" Required="false" List="Lists/ForumType" ShowField="Title" UnlimitedLengthInDocumentLibrary="TRUE" Group="$Resources:KMS_Copy.Global,Definition_Group;" StaticName="Field_KMS_ForumType" Mult="TRUE" Name="Field_KMS_ForumType" /><Field ID="{4eeae98d-78cd-4d70-aa1b-bc2cd64424b2}" Name="Field_KMS_IsTop" StaticName="Field_KMS_IsTop" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_IsTop;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Hidden="TRUE" Type="Text" /><Field ID="{2ab8d938-0362-4cf2-8585-7bba97ca0a12}" Name="Field_KMS_CommentsCount" StaticName="Field_KMS_CommentsCount" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_CommentsCount;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="Integer" /><Field ID="{21badfda-bc9d-4922-8700-88b74e10a221}" Name="Field_KMS_ViewCount" StaticName="Field_KMS_ViewCount" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ViewCount;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="Integer" /><Field ID="{308e242b-da75-43d1-b302-5c80974ee62b}" Name="Field_KMS_LastComments" StaticName="Field_KMS_LastComments" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_LastComments;" Required="FALSE" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="DateTime" Format="DateTime" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_KMS_ForumContent" /><FieldRef Name="Field_KMS_ForumType" /><FieldRef Name="Field_KMS_CommentsCount" /><FieldRef Name="Field_KMS_ViewCount" /><FieldRef Name="Field_KMS_LastComments" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

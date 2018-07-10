@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a2ff9be0-fb6a-47f2-81dd-cf137f5c10d1}"
+       Name="Field_KMS_AdminField1"
+       StaticName="Field_KMS_AdminField1"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminField1;"
+       Type="Text"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;" >
+  </Field>
+</Elements>

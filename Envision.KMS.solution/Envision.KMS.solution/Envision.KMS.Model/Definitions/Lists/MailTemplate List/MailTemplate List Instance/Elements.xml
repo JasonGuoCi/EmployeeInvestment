@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="MailTemplate" OnQuickLaunch="TRUE" TemplateType="3003" Url="Lists/MailTemplate" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Created</Field>
+          <Field Name="Field_Email_Subject"></Field>
+          <Field Name="Field_Email_Content"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Transfer</Field>
+          <Field Name="Field_Email_Subject"></Field>
+          <Field Name="Field_Email_Content"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Finish</Field>
+          <Field Name="Field_Email_Subject"></Field>
+          <Field Name="Field_Email_Content"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Reminder</Field>
+          <Field Name="Field_Email_Subject"></Field>
+          <Field Name="Field_Email_Content"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">AdminDeleteToAuthor</Field>
+          <Field Name="Field_Email_Subject"></Field>
+          <Field Name="Field_Email_Content"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">AdminDeleteToApprover</Field>
+          <Field Name="Field_Email_Subject"></Field>
+          <Field Name="Field_Email_Content"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">DeleteToApprover</Field>
+          <Field Name="Field_Email_Subject"></Field>
+          <Field Name="Field_Email_Content"></Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

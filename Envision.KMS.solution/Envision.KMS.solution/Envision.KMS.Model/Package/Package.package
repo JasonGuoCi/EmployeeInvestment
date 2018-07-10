@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ecd9c2f6-d36c-4a0d-bfce-7f84a9dfebed" solutionId="ecd9c2f6-d36c-4a0d-bfce-7f84a9dfebed" resetWebServer="false" sharePointProductVersion="15.0" name="Envision.KMS.Model" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Focuswin.SP.Base.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Lib\Focuswin.SP.Base.dll" />
+    <customAssembly location="log4net.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Lib\log4net.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="d7f4bba1-dc80-4ba7-b58a-23f8c21addd8" />
+    <featureReference itemId="b65651d7-8b7c-4c88-9d21-1a6a39dafbcc" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="ce39204d-157c-4cf5-ab9c-8356033298c6" />
+  </projectItems>
+</package>

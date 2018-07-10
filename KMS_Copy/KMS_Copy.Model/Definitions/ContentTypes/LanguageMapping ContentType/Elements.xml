@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- 父内容类型: Item (0x01) -->
+  <ContentType ID="0x0100FFD77D0C264F4DFFBC41F265613DB481" Name="LanguageMapping ContentType" Group="KMS Content Type" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{0d7233d8-3c68-4ffb-903e-629dba24e9b7}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Model;" Required="FALSE" Name="Field_KMS_Model" Format="Dropdown" />
+      <FieldRef ID="{fd91bfd0-0b46-4611-9fda-8e39c038fb72}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ChineseName;" Name="Field_KMS_ChineseName" />
+      <FieldRef ID="{8ef2db7c-ef54-46cb-9f01-2e21577f96a7}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishName;" Name="Field_KMS_EnglishName" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

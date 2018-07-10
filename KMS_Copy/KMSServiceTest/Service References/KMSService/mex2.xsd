@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KMS_Copy.Service" />
+  <xs:import schemaLocation="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/KMS_Copy.Model.Models.Announcement" />
+  <xs:element name="GetSearchUrl">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSearchUrlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/KMS_Copy.Service" minOccurs="0" name="GetSearchUrlResult" nillable="true" type="q1:JsonResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGlobalNavigation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/KMS_Copy.Model.Models.Announcement" minOccurs="0" name="obj" nillable="true" type="q2:PagingEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGlobalNavigationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/KMS_Copy.Service" minOccurs="0" name="GetGlobalNavigationResult" nillable="true" type="q3:JsonResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnnouncementsItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/KMS_Copy.Model.Models.Announcement" minOccurs="0" name="obj" nillable="true" type="q4:PagingEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnnouncementsItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/KMS_Copy.Service" minOccurs="0" name="GetAnnouncementsItemsResult" nillable="true" type="q5:JsonResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNavigation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/KMS_Copy.Model.Models.Announcement" minOccurs="0" name="obj" nillable="true" type="q6:PagingEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNavigationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/KMS_Copy.Service" minOccurs="0" name="GetSiteNavigationResult" nillable="true" type="q7:JsonResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

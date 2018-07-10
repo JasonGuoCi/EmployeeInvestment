@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="GlobalContact List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/GlobalContact List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010004471EB60BFE47CFB48269D17A89A627" Name="GlobalContact ContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{6BD378DE-DD43-4541-B889-562328F77B25}" Name="Field_KMS_AdminName" /><FieldRef ID="{DF549053-5829-4085-BA7A-22B0C57A368D}" Name="Field_KMS_AdminContact" /><FieldRef ID="{0AE1DEA2-9A65-4C99-9E7D-3FD4207B51B3}" Name="Field_KMS_AdminField1" /><FieldRef ID="{CF579850-EA3B-43CA-A349-8A956CAB9421}" Name="Field_KMS_AdminField2" /><FieldRef ID="{E10F21E6-F872-4E0B-B8F1-5185A4AEAF60}" Name="Field_KMS_AdminField3" /><FieldRef ID="{71CEAF24-7B47-4611-A906-FA3E5C6475A8}" Name="Field_KMS_RalatedGlobal" /><FieldRef ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{6BD378DE-DD43-4541-B889-562328F77B25}" Name="Field_KMS_AdminName" StaticName="Field_KMS_AdminName" DisplayName="$Resources:KMS.Global,Field_KMS_AdminName;" Group="$Resources:KMS.Global,Definition_Group;" Type="Text" /><Field ID="{DF549053-5829-4085-BA7A-22B0C57A368D}" Name="Field_KMS_AdminContact" StaticName="Field_KMS_AdminContact" DisplayName="$Resources:KMS.Global,Field_KMS_AdminContact;" Group="$Resources:KMS.Global,Definition_Group;" Type="Text" /><Field ID="{0AE1DEA2-9A65-4C99-9E7D-3FD4207B51B3}" Name="Field_KMS_AdminField1" StaticName="Field_KMS_AdminField1" DisplayName="$Resources:KMS.Global,Field_KMS_AdminField1;" Group="$Resources:KMS.Global,Definition_Group;" Type="Text" /><Field ID="{CF579850-EA3B-43CA-A349-8A956CAB9421}" Name="Field_KMS_AdminField2" StaticName="Field_KMS_AdminField2" DisplayName="$Resources:KMS.Global,Field_KMS_AdminField2;" Group="$Resources:KMS.Global,Definition_Group;" Type="Text" /><Field ID="{E10F21E6-F872-4E0B-B8F1-5185A4AEAF60}" Name="Field_KMS_AdminField3" StaticName="Field_KMS_AdminField3" DisplayName="$Resources:KMS.Global,Field_KMS_AdminField3;" Group="$Resources:KMS.Global,Definition_Group;" Type="Text" /><Field ID="{71CEAF24-7B47-4611-A906-FA3E5C6475A8}" Type="Lookup" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplayName="$Resources:KMS.Global,Field_KMS_RalatedGlobal;" Required="false" List="Lists/GlobalSlider" ShowField="Title" UnlimitedLengthInDocumentLibrary="TRUE" Group="$Resources:EIP.Global,Definition_Group;" StaticName="Field_KMS_RalatedGlobal" Name="Field_KMS_RalatedGlobal" /><Field ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order" StaticName="Field_KMS_Order" DisplayName="$Resources:KMS.Global,Field_KMS_Order;" Group="$Resources:KMS.Global,Definition_Group;" Type="Integer" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_KMS_AdminName" /><FieldRef Name="Field_KMS_AdminContact" /><FieldRef Name="Field_KMS_AdminField1" /><FieldRef Name="Field_KMS_AdminField2" /><FieldRef Name="Field_KMS_AdminField3" /><FieldRef Name="Field_KMS_RalatedGlobal" /><FieldRef Name="Field_KMS_Order" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

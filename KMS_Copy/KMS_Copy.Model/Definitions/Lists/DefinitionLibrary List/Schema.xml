@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="DefinitionLibrary List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/DefinitionLibrary List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100ED8E2803FC2147C19971E30721882559" Name="DefinitionLibrary ContentType" Group="KMS Content Type" Description="DefinitionLibrary ContentType" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{2cd4701f-324d-434c-b3b2-48f84f3e1750}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishTitle;" Name="Field_KMS_EnglishTitle" /><FieldRef ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;" Name="Field_KMS_Order" /><FieldRef ID="{7f5daaa5-2355-44ae-b26c-7a5ee7a759d1}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Status;" Name="Field_KMS_Status" Format="Dropdown" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{2cd4701f-324d-434c-b3b2-48f84f3e1750}" Name="Field_KMS_EnglishTitle" StaticName="Field_KMS_EnglishTitle" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishTitle;" Type="Text" Group="$Resources:KMS_Copy.Global,Definition_Group;"></Field><Field ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" Name="Field_KMS_Order" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;" Type="Integer" Group="$Resources:KMS_Copy.Global,Definition_Group;"></Field><Field ID="{7f5daaa5-2355-44ae-b26c-7a5ee7a759d1}" Name="Field_KMS_Status" StaticName="Field_KMS_Status" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Status;" Type="Choice" Format="Dropdown" Group="$Resources:KMS_Copy.Global,Definition_Group;"><Default>Draft</Default><CHOICES><CHOICE>Draft</CHOICE><CHOICE>Published</CHOICE><CHOICE>Abolished</CHOICE></CHOICES></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_KMS_EnglishTitle" /><FieldRef Name="Field_KMS_Order" /><FieldRef Name="Field_KMS_Status" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

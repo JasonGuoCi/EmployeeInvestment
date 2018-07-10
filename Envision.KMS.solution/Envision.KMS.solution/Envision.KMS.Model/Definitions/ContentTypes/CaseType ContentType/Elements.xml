@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01002E0B061E62F74D77892087A7092C04CF"
+               Name="CaseType ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{7009EF26-2F0D-4653-89CE-9B87C72630F2}" Name="Field_Case_User"/>
+      <FieldRef ID="{849FA154-E128-4272-AA47-E53287786891}" Name="Field_Case_EnglishTitle"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

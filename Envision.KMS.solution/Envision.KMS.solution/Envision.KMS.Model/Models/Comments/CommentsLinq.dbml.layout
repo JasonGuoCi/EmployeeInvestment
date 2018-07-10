@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CommentsLinq">
+  <DataContextMoniker Name="/CommentsLinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1b8d359e-c775-4af6-96fe-20760dd7e728" absoluteBounds="6.375, 2, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CommentsLinqDataContext/KMSComment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c82d5d2-39e2-4fd3-97f9-88634c81eac5" absoluteBounds="6.39, 2.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

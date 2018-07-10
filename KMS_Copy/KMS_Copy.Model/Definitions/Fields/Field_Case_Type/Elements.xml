@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{61a009f9-53ca-41d2-bd1c-8f8090c77423}"
+       Type="Lookup"
+       SourceID="http://schemas.microsoft.com/sharepoint/v3"
+       DisplayName="$Resources:KMS_Copy.Global,Field_Case_Type;"
+       Required="false"
+       List="Lists/CaseType"
+       ShowField="Title"
+       UnlimitedLengthInDocumentLibrary="TRUE"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       StaticName="Field_Case_Type"
+       Name="Field_Case_Type" />
+</Elements>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8bfff680-a764-4f79-9b1d-4d662f72519d}"
+       Name="Field_Case_Status"
+       DisplayName="$Resources:KMS_Copy.Global,Field_Case_Status;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Required="FALSE"
+       Type="Choice" Format="Dropdown">
+       <Default></Default>
+       <CHOICES>
+         <CHOICE>申请中</CHOICE>
+         <CHOICE>已完成</CHOICE>
+       </CHOICES>
+  </Field>
+</Elements>

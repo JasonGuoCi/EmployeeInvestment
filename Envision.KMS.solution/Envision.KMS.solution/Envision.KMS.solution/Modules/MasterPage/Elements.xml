@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPage" Url="_catalogs/masterpage" RootWebOnly="TRUE">
+    <File Path="MasterPage\Envision.KMS.master" Url="Envision.KMS.master" Type="GhostableInLibrary" ReplaceContent="TRUE"/>
+    <File Path="MasterPage\Envision.KMS.Basic1.master" Url="Envision.KMS.Basic1.master" Type="GhostableInLibrary" ReplaceContent="TRUE"/>
+    <File Path="MasterPage\Envision.KMS.Global.master" Url="Envision.KMS.Global.master" Type="GhostableInLibrary" ReplaceContent="TRUE"/>
+  </Module>
+</Elements>

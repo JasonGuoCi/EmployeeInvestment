@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6edb54f5-76f2-4e3c-821f-9e4bfd820c44}"
+       Type="Lookup"
+       SourceID="http://schemas.microsoft.com/sharepoint/v3"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_RelatedGlobal;"
+       Required="false"
+       List="Lists/GlobalSilder"
+       ShowField="Title"
+       UnlimitedLengthInDocumentLibrary="TRUE"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       StaticName="Field_KMS_RelatedGlobal"
+       Name="Field_KMS_RelatedGlobal" />
+</Elements>

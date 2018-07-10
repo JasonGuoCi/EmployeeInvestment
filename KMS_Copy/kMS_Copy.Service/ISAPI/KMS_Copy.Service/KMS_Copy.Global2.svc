@@ -1,0 +1,4 @@
+﻿<%@ ServiceHost Language="C#" Debug="true"
+    Service="KMS_Copy.Service.Services.KMS_Copy.Global,KMS_Copy.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4ca508e1e4119874"
+    Factory="Microsoft.SharePoint.Client.Services.MultipleBaseAddressWebServiceHostFactory,Microsoft.SharePoint.Client.ServerRuntime,Version=15.0.0.0,
+    Culture=neutral,PublicKeyToken=71e9bce111e9429c" %>

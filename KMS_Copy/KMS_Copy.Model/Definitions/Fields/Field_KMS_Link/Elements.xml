@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{dd6f302d-bd2f-4fe0-9870-d9ad895d614b}"
+       Name="Field_KMS_Link"
+       StaticName="Field_KMS_Link"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Link;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Type="Text"/>
+</Elements>

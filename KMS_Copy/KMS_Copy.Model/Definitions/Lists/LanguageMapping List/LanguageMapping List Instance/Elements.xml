@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="LanguageMapping" OnQuickLaunch="TRUE" TemplateType="10002" Url="Lists/LanguageMapping" Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Head Title</Field>
+          <Field Name="Field_KMS_Model">通知公告</Field>
+          <Field Name="Field_KMS_ChineseName">通知公告</Field>
+          <Field Name="Field_KMS_EnglishName">Announcement</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Head Title</Field>
+          <Field Name="Field_KMS_Model">页首</Field>
+          <Field Name="Field_KMS_ChineseName">知识中心</Field>
+          <Field Name="Field_KMS_EnglishName">KNOWLEDGE CENTER</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">wikipedia</Field>
+          <Field Name="Field_KMS_Model">左侧导航</Field>
+          <Field Name="Field_KMS_ChineseName">格林百科</Field>
+          <Field Name="Field_KMS_EnglishName">Wikipedia</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Operation</Field>
+          <Field Name="Field_KMS_Model">左侧导航</Field>
+          <Field Name="Field_KMS_ChineseName">操作教程</Field>
+          <Field Name="Field_KMS_EnglishName">Operation</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Forum</Field>
+          <Field Name="Field_KMS_Model">左侧导航</Field>
+          <Field Name="Field_KMS_ChineseName">论坛</Field>
+          <Field Name="Field_KMS_EnglishName">Forum</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">ForumSub1</Field>
+          <Field Name="Field_KMS_Model">左侧导航</Field>
+          <Field Name="Field_KMS_ChineseName">互动交流</Field>
+          <Field Name="Field_KMS_EnglishName">Interactive Community</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">ForumSub2</Field>
+          <Field Name="Field_KMS_Model">左侧导航</Field>
+          <Field Name="Field_KMS_ChineseName">软件问题及建议</Field>
+          <Field Name="Field_KMS_EnglishName">Problems Suggestions</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Tree Title</Field>
+          <Field Name="Field_KMS_Model">百科</Field>
+          <Field Name="Field_KMS_ChineseName">词条</Field>
+          <Field Name="Field_KMS_EnglishName">Definitions</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Video Title</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">视频</Field>
+          <Field Name="Field_KMS_EnglishName">Video</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">VideoModuleText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">视频（分类）</Field>
+          <Field Name="Field_KMS_EnglishName">Video(Module)</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">VideoModuleDesc</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">操作视频按照类型分类</Field>
+          <Field Name="Field_KMS_EnglishName">Operation video library sort by module type</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">CategoriesText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">分类</Field>
+          <Field Name="Field_KMS_EnglishName">Categories</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">VideoCreatedText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">视频（创建日期）</Field>
+          <Field Name="Field_KMS_EnglishName">Video(Created)</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">VideoCreatedDesc</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">操作视频按照创建时间</Field>
+          <Field Name="Field_KMS_EnglishName">Operation video library sort by created</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">VideoCountText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">个视频</Field>
+          <Field Name="Field_KMS_EnglishName">Counts</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Manual Title</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">操作手册</Field>
+          <Field Name="Field_KMS_EnglishName">Manual</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">UserModuleText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">用户手册</Field>
+          <Field Name="Field_KMS_EnglishName">User Manual</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">UserModuleDesc</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">用户操作手册</Field>
+          <Field Name="Field_KMS_EnglishName">User Manual Library</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">ManualCountText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">个手册</Field>
+          <Field Name="Field_KMS_EnglishName">Manuals</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">ManualHtmlText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">页面</Field>
+          <Field Name="Field_KMS_EnglishName">Pages</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">ManualDocText</Field>
+          <Field Name="Field_KMS_Model">操作教程</Field>
+          <Field Name="Field_KMS_ChineseName">文档</Field>
+          <Field Name="Field_KMS_EnglishName">Documents</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Contact Us</Field>
+          <Field Name="Field_KMS_Model">页首</Field>
+          <Field Name="Field_KMS_ChineseName">查看联系人</Field>
+          <Field Name="Field_KMS_EnglishName">Contact Us</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Link To</Field>
+          <Field Name="Field_KMS_Model">页首</Field>
+          <Field Name="Field_KMS_ChineseName">点击进入</Field>
+          <Field Name="Field_KMS_EnglishName">Link To Site</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Contact</Field>
+          <Field Name="Field_KMS_Model">页首</Field>
+          <Field Name="Field_KMS_ChineseName">联系人</Field>
+          <Field Name="Field_KMS_EnglishName">Contact</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Contact Phone</Field>
+          <Field Name="Field_KMS_Model">页首</Field>
+          <Field Name="Field_KMS_ChineseName">联系方式</Field>
+          <Field Name="Field_KMS_EnglishName">Contact Mobile</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Site Name</Field>
+          <Field Name="Field_KMS_Model">页首</Field>
+          <Field Name="Field_KMS_ChineseName">管理站点</Field>
+          <Field Name="Field_KMS_EnglishName">Site Management</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Wiki Title</Field>
+          <Field Name="Field_KMS_Model">通知公告</Field>
+          <Field Name="Field_KMS_ChineseName">百科</Field>
+          <Field Name="Field_KMS_EnglishName">WIKI</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Manual Title</Field>
+          <Field Name="Field_KMS_Model">通知公告</Field>
+          <Field Name="Field_KMS_ChineseName">操作</Field>
+          <Field Name="Field_KMS_EnglishName">Manual</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Forum Title</Field>
+          <Field Name="Field_KMS_Model">通知公告</Field>
+          <Field Name="Field_KMS_ChineseName">论坛</Field>
+          <Field Name="Field_KMS_EnglishName">Forum</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">view display</Field>
+          <Field Name="Field_KMS_Model">论坛</Field>
+          <Field Name="Field_KMS_ChineseName">查看数</Field>
+          <Field Name="Field_KMS_EnglishName">Viewed</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">reply display</Field>
+          <Field Name="Field_KMS_Model">论坛</Field>
+          <Field Name="Field_KMS_ChineseName">回复数</Field>
+          <Field Name="Field_KMS_EnglishName">Reply</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">my application display</Field>
+          <Field Name="Field_KMS_Model">论坛</Field>
+          <Field Name="Field_KMS_ChineseName">我的申请</Field>
+          <Field Name="Field_KMS_EnglishName">My Application</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">my task display</Field>
+          <Field Name="Field_KMS_Model">论坛</Field>
+          <Field Name="Field_KMS_ChineseName">我的待办</Field>
+          <Field Name="Field_KMS_EnglishName">My Task</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">query display</Field>
+          <Field Name="Field_KMS_Model">论坛</Field>
+          <Field Name="Field_KMS_ChineseName">所有问题</Field>
+          <Field Name="Field_KMS_EnglishName">Query</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

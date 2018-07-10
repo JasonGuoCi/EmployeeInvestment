@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ProjectPages" Url="$Resources:osrvcore,List_Pages_UrlName;/Projects">
+    <File Path="ProjectPages\Home.aspx" Url="Home.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="AnnouncementZone" WebPartOrder="0">
+        <![CDATA[
+          <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="KMS_Copy.WebParts.HomePage.Announcements.Announcements, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">KMS_Copy - Announcements</property>
+        <property name="Description" type="string">我的 Web 部件</property>
+        <property name="ChromeType" type="chrometype">none</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="ProjectPages\Home - Copy.aspx" Url="Home - Copy.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="AnnouncementZone" WebPartOrder="0">
+        <![CDATA[
+       <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="KMS_Copy.WebParts.HomePage.Announcements.Announcements, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">KMS_Copy - Announcements</property>
+        <property name="Description" type="string">我的 Web 部件</property>
+        <property name="ChromeType" type="chrometype">none</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="ProjectPages\Wikipedia.aspx" Url="Wikipedia.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" >
+      <AllUsersWebPart WebPartZoneID="WikipediaZone" WebPartOrder="0">
+        <![CDATA[
+        <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="KMS_Copy.WebParts.HomePage.Wikipedia_Webpart.Wikipedia_Webpart, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">KMS_Copy - Wikipedia Webpart</property>
+        <property name="Description" type="string">我的 Web 部件</property>
+        <property name="ChromeType" type="chrometype">none</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="ProjectPages\LayoutPage.aspx" Url="VideoPlayer.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="WikipediaZone" WebPartOrder="0">
+        <![CDATA[
+       <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="KMS_Copy.WebParts.HomePage.VideoPlayer.VideoPlayer, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">KMS_Copy - VideoPlayer</property>
+        <property name="Description" type="string">我的 Web 部件</property>
+        <property name="ChromeType" type="chrometype">none</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="ProjectPages\Wikipedia.aspx" Url="Manual.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="WikipediaZone" WebPartOrder="0">
+        <![CDATA[
+       <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="KMS_Copy.WebParts.HomePage.Manual.Manual, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">KMS_Copy - Manual</property>
+        <property name="Description" type="string">我的 Web 部件</property>
+        <property name="ChromeType" type="chrometype">none</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+  </Module>
+</Elements>

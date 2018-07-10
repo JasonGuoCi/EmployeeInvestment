@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4eeae98d-78cd-4d70-aa1b-bc2cd64424b2}"
+       Name="Field_KMS_IsTop"
+       StaticName="Field_KMS_IsTop"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_IsTop;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Hidden="TRUE"
+       Type="Text"/>
+</Elements>

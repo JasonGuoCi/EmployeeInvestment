@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6e6784a8-2d82-4da2-a410-a3e2462f9f71}"
+       Name="Field_Case_User"
+       StaticName="Field_Case_User"
+       DisplayName="$Resources:KMS_Copy.Global,Field_Case_User;"
+       Required="FALSE"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Type="User"
+       UserSelectionMode="0">
+  </Field>
+</Elements>

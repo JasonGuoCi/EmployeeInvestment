@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2297cab1-3873-410d-9822-f8004abd8a85}"
+       Name="Field_Case_EnglishTitle"
+       StaticName="Field_Case_EnglishTitle"
+       DisplayName="$Resources:KMS_Copy.Global,Field_Case_EnglishTitle;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Type="Text"/>
+</Elements>

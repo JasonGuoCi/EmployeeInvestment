@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CaseType List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CaseType List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01006d8ce93dacb34ac68a52614be8d740f3" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{6e6784a8-2d82-4da2-a410-a3e2462f9f71}" Name="Field_Case_User" /><FieldRef ID="{2297cab1-3873-410d-9822-f8004abd8a85}" Name="Field_Case_EnglishTitle" /></FieldRefs></ContentType><ContentType ID="0x0100E93C2B510A3242FEA9D7678A23C7C45F" Name="CaseType ContentType" Group="KMS Content Type" Description="CaseType ContentType" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{6e6784a8-2d82-4da2-a410-a3e2462f9f71}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_User;" Required="FALSE" Name="Field_Case_User" /><FieldRef ID="{2297cab1-3873-410d-9822-f8004abd8a85}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_EnglishTitle;" Name="Field_Case_EnglishTitle" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{6e6784a8-2d82-4da2-a410-a3e2462f9f71}" Name="Field_Case_User" StaticName="Field_Case_User" DisplayName="$Resources:KMS_Copy.Global,Field_Case_User;" Required="TRUE" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="User" UserSelectionMode="0"></Field><Field ID="{2297cab1-3873-410d-9822-f8004abd8a85}" Name="Field_Case_EnglishTitle" StaticName="Field_Case_EnglishTitle" DisplayName="$Resources:KMS_Copy.Global,Field_Case_EnglishTitle;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="Text" Required="TRUE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_Case_User" /><FieldRef Name="Field_Case_EnglishTitle" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

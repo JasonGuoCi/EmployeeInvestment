@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ForumType" OnQuickLaunch="TRUE" TemplateType="10008" Url="Lists/ForumType" Description="ForumType List"></ListInstance>
+</Elements>

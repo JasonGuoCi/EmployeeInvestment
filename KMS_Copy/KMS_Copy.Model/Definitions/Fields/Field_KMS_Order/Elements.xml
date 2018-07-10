@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}"
+       Name="Field_KMS_Order"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;"
+       Type="Integer"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;">
+  </Field>
+</Elements>

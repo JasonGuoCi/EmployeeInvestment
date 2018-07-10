@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{dd10b4bb-5c07-419a-a429-16337f750459}"
+       Type="Lookup"
+       SourceID="http://schemas.microsoft.com/sharepoint/v3"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ForumType;"
+       Required="false"
+       List="Lists/ForumType"
+       ShowField="Title"
+       UnlimitedLengthInDocumentLibrary="TRUE"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       StaticName="Field_KMS_ForumType"
+       Mult="TRUE"
+       Name="Field_KMS_ForumType" />
+</Elements>

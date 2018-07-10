@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="GlobalPage WebPart" List="113" Url="_catalogs/wp">
+    <File Path="GlobalPage WebPart\GlobalPage WebPart.webpart" Url="GlobalPage WebPart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="KMSProject" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01003FFE0E99F6794D15A6562CCBEBF96DD5"
+               Name="CaseManagement ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{7009EF26-2F0D-4653-89CE-9B87C72630F2}" Name="Field_Case_User"/>
+      <FieldRef ID="{10A7B009-C73C-40A5-A871-D51643B982B9}" Name="Field_Case_Content"/>
+      <FieldRef ID="{AB8454CA-CA00-41AF-9379-D353A04B165C}" Name="Field_Case_Type"/>
+      <FieldRef ID="{3DDEA4D2-6BB0-41D9-8AD7-684038AE95CD}" Name="Field_Case_Status"/>
+      <FieldRef ID="{1B965416-8071-4D5C-8716-CAD8471EC4BB}" Name="Field_Case_Comments"/>
+      <FieldRef ID="{E6715B59-DDA6-49DC-8CDE-42609AA7D453}" Name="Field_KMS_IsTop"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

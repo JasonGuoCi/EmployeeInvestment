@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="LanguageMapping" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/LanguageMapping" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01000CD786F2DE5E4297AFE2DC8D71D2462C" Name="LanguageMapping ContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{711852D7-1676-4356-970E-FB152C61FB18}" Name="Field_KMS_Model" /><FieldRef ID="{86D84838-63B5-4EAB-B328-0BFF528698F7}" Name="Field_KMS_ChineseName" /><FieldRef ID="{EA7E4195-B765-4B32-83D1-328F1D795A94}" Name="Field_KMS_EnglishName" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{711852D7-1676-4356-970E-FB152C61FB18}" Name="Field_KMS_Model" DisplayName="$Resources:KMS.Global,Field_KMS_Model;" Group="$Resources:KMS.Global,Definition_Group;" Required="FALSE" Type="Choice" Format="Dropdown"><CHOICES><CHOICE>页首</CHOICE><CHOICE>左侧导航</CHOICE><CHOICE>通知公告</CHOICE><CHOICE>百科</CHOICE><CHOICE>操作教程</CHOICE><CHOICE>论坛</CHOICE><CHOICE>互动管理</CHOICE></CHOICES></Field><Field ID="{86D84838-63B5-4EAB-B328-0BFF528698F7}" Name="Field_KMS_ChineseName" StaticName="Field_KMS_ChineseName" DisplayName="$Resources:KMS.Global,Field_KMS_ChineseName;" Group="$Resources:KMS.Global,Definition_Group;" Type="Text" /><Field ID="{EA7E4195-B765-4B32-83D1-328F1D795A94}" Name="Field_KMS_EnglishName" StaticName="Field_KMS_EnglishName" DisplayName="$Resources:KMS.Global,Field_KMS_EnglishName;" Group="$Resources:KMS.Global,Definition_Group;" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_KMS_Model" /><FieldRef Name="Field_KMS_ChineseName" /><FieldRef Name="Field_KMS_EnglishName" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

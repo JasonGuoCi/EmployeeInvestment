@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{51b35f51-f322-4f7d-bf2d-9499694aaf24}"
+       Name="Field_KMS_GlobalImg"
+       StaticName="Field_KMS_GlobalImg"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_GlobalImg;"
+       Type="URL"
+       Format="Image"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;">
+  </Field>
+</Elements>

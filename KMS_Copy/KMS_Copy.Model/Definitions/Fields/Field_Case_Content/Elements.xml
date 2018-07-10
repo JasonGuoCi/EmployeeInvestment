@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{134e72af-cf78-4120-ab2f-7e3a8b9712a4}"
+       Name="Field_Case_Content"
+       StaticName="Field_Case_Content"
+       DisplayName="$Resources:KMS_Copy.Global,Field_Case_Content;"
+       Required="FALSE"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       RichText="FALSE" NumLines="6"
+       Type="Note"/>
+</Elements>

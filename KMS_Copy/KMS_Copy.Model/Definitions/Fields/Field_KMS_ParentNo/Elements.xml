@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a2dce987-7ab9-499d-8b01-6a8ca2f35446}"
+       Name="Field_KMS_ParentNo"
+       StaticName="Field_KMS_ParentNo"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ParentNo;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Type="Text"/>
+</Elements>

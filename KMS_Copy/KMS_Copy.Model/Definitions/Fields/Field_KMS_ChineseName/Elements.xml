@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fd91bfd0-0b46-4611-9fda-8e39c038fb72}"
+       Name="Field_KMS_ChineseName"
+       StaticName="Field_KMS_ChineseName"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ChineseName;"
+       Type="Text"
+       Group="$Resources:KMS_Copy.Global,Definition_Group">
+  </Field>
+</Elements>

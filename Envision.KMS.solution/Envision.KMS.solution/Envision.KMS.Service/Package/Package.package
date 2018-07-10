@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1ee787cd-cb3e-4bb3-8a66-4257ea67b39b" solutionId="1ee787cd-cb3e-4bb3-8a66-4257ea67b39b" resetWebServer="false" sharePointProductVersion="15.0" name="Envision.KMS.Service" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="befeca82-a9ad-4745-90d5-97c895fa0017" />
+  </projectItems>
+</package>

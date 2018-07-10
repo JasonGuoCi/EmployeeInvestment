@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6abe2825-c628-41f9-8795-58892afc0be6}"
+       Name="Field_Email_Subject"
+       DisplayName="$Resources:KMS_Copy.Global,Field_Email_Subject;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Type="Text"/>
+</Elements>

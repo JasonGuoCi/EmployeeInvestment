@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4f079327-f07a-4152-b950-ab073e13599c}"
+       Name="Field_KMS_GlobalEngDesc"
+       StaticName="Field_KMS_GlobalEngDesc"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_GlobalEngDesc;"
+       RichText="FALSE" 
+       NumLines="6"
+       Type="Note"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;">
+  </Field>
+</Elements>

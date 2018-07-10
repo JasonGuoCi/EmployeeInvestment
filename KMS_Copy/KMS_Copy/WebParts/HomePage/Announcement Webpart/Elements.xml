@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="Announcement Webpart" List="113" Url="_catalogs/wp">
+    <File Path="Announcement Webpart\Announcement Webpart.webpart" Url="KMS_Copy_Announcement Webpart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="KMS_CopyProject" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Global" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IGlobalService2_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:NtlmAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KMS_Copy.Service" />
+      <xsd:import schemaLocation="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc/mex?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/KMS_Copy.Model.Models.Announcement" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGlobalService_GetSearchUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchUrl" />
+  </wsdl:message>
+  <wsdl:message name="IGlobalService_GetSearchUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGlobalService_GetGlobalNavigation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGlobalNavigation" />
+  </wsdl:message>
+  <wsdl:message name="IGlobalService_GetGlobalNavigation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGlobalNavigationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGlobalService_GetAnnouncementsItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncementsItems" />
+  </wsdl:message>
+  <wsdl:message name="IGlobalService_GetAnnouncementsItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncementsItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGlobalService_GetSiteNavigation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNavigation" />
+  </wsdl:message>
+  <wsdl:message name="IGlobalService_GetSiteNavigation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSiteNavigationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGlobalService">
+    <wsdl:operation name="GetSearchUrl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGlobalService/GetSearchUrl" message="tns:IGlobalService_GetSearchUrl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGlobalService/GetSearchUrlResponse" message="tns:IGlobalService_GetSearchUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalNavigation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGlobalService/GetGlobalNavigation" message="tns:IGlobalService_GetGlobalNavigation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGlobalService/GetGlobalNavigationResponse" message="tns:IGlobalService_GetGlobalNavigation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncementsItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGlobalService/GetAnnouncementsItems" message="tns:IGlobalService_GetAnnouncementsItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGlobalService/GetAnnouncementsItemsResponse" message="tns:IGlobalService_GetAnnouncementsItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNavigation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGlobalService/GetSiteNavigation" message="tns:IGlobalService_GetSiteNavigation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGlobalService/GetSiteNavigationResponse" message="tns:IGlobalService_GetSiteNavigation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IGlobalService" type="tns:IGlobalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSearchUrl">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetSearchUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalNavigation">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetGlobalNavigation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncementsItems">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetAnnouncementsItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNavigation">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetSiteNavigation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IGlobalService1" type="tns:IGlobalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSearchUrl">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetSearchUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalNavigation">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetGlobalNavigation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncementsItems">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetAnnouncementsItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNavigation">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetSiteNavigation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IGlobalService2" type="tns:IGlobalService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IGlobalService2_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSearchUrl">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetSearchUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGlobalNavigation">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetGlobalNavigation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncementsItems">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetAnnouncementsItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteNavigation">
+      <soap:operation soapAction="http://tempuri.org/IGlobalService/GetSiteNavigation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Global">
+    <wsdl:port name="BasicHttpBinding_IGlobalService" binding="tns:BasicHttpBinding_IGlobalService">
+      <soap:address location="http://sharepointlipan:567/_vti_bin/KMS_Copy.Service/Global.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

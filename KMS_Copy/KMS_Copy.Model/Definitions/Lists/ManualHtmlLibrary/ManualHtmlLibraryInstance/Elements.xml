@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ManualHtmlLibrary"
+                OnQuickLaunch="TRUE"
+                TemplateType="10007"
+                Url="Lists/ManualHtmlLibrary"
+                Description="我的列表实例">
+  </ListInstance>
+</Elements>

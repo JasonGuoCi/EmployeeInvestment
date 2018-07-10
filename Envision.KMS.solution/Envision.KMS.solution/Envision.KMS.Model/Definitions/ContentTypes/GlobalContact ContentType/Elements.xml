@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010004471EB60BFE47CFB48269D17A89A627"
+               Name="GlobalContact ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{6BD378DE-DD43-4541-B889-562328F77B25}" Name="Field_KMS_AdminName"/>
+      <FieldRef ID="{DF549053-5829-4085-BA7A-22B0C57A368D}" Name="Field_KMS_AdminContact"/>
+      <FieldRef ID="{0AE1DEA2-9A65-4C99-9E7D-3FD4207B51B3}" Name="Field_KMS_AdminField1"/>
+      <FieldRef ID="{CF579850-EA3B-43CA-A349-8A956CAB9421}" Name="Field_KMS_AdminField2"/>
+      <FieldRef ID="{E10F21E6-F872-4E0B-B8F1-5185A4AEAF60}" Name="Field_KMS_AdminField3"/>
+      <FieldRef ID="{71CEAF24-7B47-4611-A906-FA3E5C6475A8}" Name="Field_KMS_RalatedGlobal"/>
+      <FieldRef ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

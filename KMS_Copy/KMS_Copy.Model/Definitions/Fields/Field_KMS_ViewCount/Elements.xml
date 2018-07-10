@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{21badfda-bc9d-4922-8700-88b74e10a221}"
+       Name="Field_KMS_ViewCount"
+       StaticName="Field_KMS_ViewCount"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ViewCount;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Type="Integer"/>
+</Elements>

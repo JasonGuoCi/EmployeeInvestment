@@ -1,0 +1,683 @@
+﻿#announcement {
+    margin-top: 40px;
+    color: #fff;
+    position: relative;
+}
+
+    #announcement .content {
+        width: 400px;
+        height: 450px;
+        float: right;
+        background-image: url(/_layouts/15/Envision.KMS.Solution/Images/bg-1.png);
+        padding: 18px;
+    }
+
+        #announcement .content .displayTite {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #eee;
+            font-size: 24px;
+        }
+
+        #announcement .content #announcement-content {
+            width: 100%;
+            height: 380px;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            #announcement .content #announcement-content #scroller {
+                position: absolute;
+                z-index: 1;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                width: 100%;
+                -webkit-transform: translateZ(0);
+                -moz-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                -o-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -webkit-text-size-adjust: none;
+                -moz-text-size-adjust: none;
+                -ms-text-size-adjust: none;
+                -o-text-size-adjust: none;
+                text-size-adjust: none;
+            }
+
+    #announcement .link {
+        position: relative;
+        float: right;
+        width: 290px;
+        height: 450px;
+    }
+
+        #announcement .link .bg-img {
+            position: absolute;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+        }
+
+        #announcement .link .circle.div1 {
+            position: absolute;
+            top: 0px;
+            right: 74px;
+            width: 89px;
+            height: 89px;
+            cursor: pointer;
+            background-image: url('about:blank');
+        }
+
+        #announcement .link .textword.div1 {
+            position: absolute;
+            top: 110px;
+            right: 68px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #announcement .link .circle.div2 {
+            position: absolute;
+            top: 180px;
+            left: 0px;
+            width: 89px;
+            height: 89px;
+            cursor: pointer;
+            background-image: url('about:blank');
+        }
+
+        #announcement .link .textword.div2 {
+            position: absolute;
+            top: 217px;
+            right: 99px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #announcement .link .circle.div3 {
+            position: absolute;
+            bottom: 0px;
+            right: 74px;
+            width: 89px;
+            height: 89px;
+            cursor: pointer;
+            background-image: url('about:blank');
+        }
+
+        #announcement .link .textword.div3 {
+            position: absolute;
+            bottom: 95px;
+            right: 70px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+        }
+
+@media (max-height: 768px) {
+    #announcement .link {
+        position: relative;
+        float: right;
+        width: 290px;
+        height: 400px;
+    }
+
+        #announcement .link .circle.div1 {
+            top: 0px;
+            right: 95px;
+            width: 83px;
+            height: 83px;
+        }
+
+        #announcement .link .textword.div1 {
+            top: 90px;
+            right: 85px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        #announcement .link .circle.div2 {
+            top: 158px;
+            left: 0px;
+            width: 83px;
+            height: 83px;
+            cursor: pointer;
+        }
+
+        #announcement .link .textword.div2 {
+            position: absolute;
+            top: 190px;
+            right: 115px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        #announcement .link .circle.div3 {
+            bottom: 0px;
+            right: 95px;
+            width: 83px;
+            height: 83px;
+        }
+
+        #announcement .link .textword.div3 {
+            bottom: 80px;
+            right: 85px;
+            width: 100px;
+            height: 30px;
+            font-size: 16px;
+        }
+}
+
+.focuswin-doc-list ul li {
+    float: left;
+    width: 260px;
+    height: 80px;
+    border-right: solid 1px #f5f5f5;
+    margin-right: 12px;
+    margin-bottom: 35px;
+}
+
+    .focuswin-doc-list ul li div.docTitle {
+        min-height: 45px;
+    }
+
+        .focuswin-doc-list ul li div.docTitle a {
+            display: block;
+            width: 200px;
+            text-decoration: none;
+            margin-left: 45px;
+        }
+
+    .focuswin-doc-list ul li img {
+        float: left;
+        margin-right: 5px;
+    }
+
+
+
+div.quotes {
+    float: left;
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+    div.quotes a {
+        border-right: #ddd 1px solid;
+        padding-right: 5px;
+        border-top: #ddd 1px solid;
+        padding-left: 5px;
+        padding-bottom: 2px;
+        border-left: #ddd 1px solid;
+        color: #000;
+        margin-right: 2px;
+        padding-top: 2px;
+        border-bottom: #ddd 1px solid;
+        text-decoration: none;
+    }
+
+        div.quotes a:hover {
+            border-right: #a0a0a0 1px solid;
+            padding-right: 5px;
+            border-top: #a0a0a0 1px solid;
+            padding-left: 5px;
+            padding-bottom: 2px;
+            border-left: #a0a0a0 1px solid;
+            margin-right: 2px;
+            padding-top: 2px;
+            border-bottom: #a0a0a0 1px solid;
+        }
+
+        div.quotes a:active {
+            border-right: #a0a0a0 1px solid;
+            padding-right: 5px;
+            border-top: #a0a0a0 1px solid;
+            padding-left: 5px;
+            padding-bottom: 2px;
+            border-left: #a0a0a0 1px solid;
+            margin-right: 2px;
+            padding-top: 2px;
+            border-bottom: #a0a0a0 1px solid;
+        }
+
+    div.quotes span.current {
+        border-right: #e0e0e0 1px solid;
+        padding-right: 5px;
+        border-top: #e0e0e0 1px solid;
+        padding-left: 5px;
+        font-weight: bold;
+        padding-bottom: 2px;
+        border-left: #e0e0e0 1px solid;
+        color: #aaa;
+        margin-right: 2px;
+        padding-top: 2px;
+        border-bottom: #e0e0e0 1px solid;
+        background-color: #f0f0f0;
+    }
+
+    div.quotes span.disabled {
+        border-right: #f3f3f3 1px solid;
+        padding-right: 5px;
+        border-top: #f3f3f3 1px solid;
+        padding-left: 5px;
+        padding-bottom: 2px;
+        border-left: #f3f3f3 1px solid;
+        color: #ccc;
+        margin-right: 2px;
+        padding-top: 2px;
+        border-bottom: #f3f3f3 1px solid;
+    }
+
+
+
+.focuswin-manualhtml-list tbody a, .focuswin-manualhtml-list tbody a:visited {
+    color: #333;
+}
+
+.focuswin-manualhtml-list .list-table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+    .focuswin-manualhtml-list .list-table tr {
+        line-height: 38px;
+    }
+
+    .focuswin-manualhtml-list .list-table td {
+        border-bottom: 1px solid #31767B;
+    }
+
+    .focuswin-manualhtml-list .list-table thead {
+        background-color: #1493DA;
+        color: #fff;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .focuswin-manualhtml-list .list-table tbody {
+        font-size: 13px;
+    }
+
+    .focuswin-manualhtml-list .list-table .title {
+        padding-left: 5px;
+    }
+
+    .focuswin-manualhtml-list .list-table tbody .title {
+        background: url("../images/point.png") no-repeat 8px center;
+        padding-left: 23px;
+    }
+
+    .focuswin-manualhtml-list .list-table .publisher {
+        width: 150px;
+        text-align: center;
+    }
+
+    .focuswin-manualhtml-list .list-table .publishdate {
+        width: 150px;
+        text-align: center;
+    }
+
+    #approvalform  .focuswin-manualhtml-list .list-table td {
+        border: 1px solid #646464;
+    }
+
+
+
+#main .focuswin-detail {
+    min-height: 500px;
+}
+
+    #main .focuswin-detail .focuswin-detail-head {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #F8931F;
+    }
+
+
+    #main .focuswin-detail .focuswin-detail-content {
+        margin: 20px auto;
+    }
+
+
+#main .focuswin-content {
+    position: relative;
+    word-break: break-all;
+}
+
+
+#main #wikipedia .focuswin-wikinav {
+    float: left;
+    overflow: auto;
+    padding: 0px 20px;
+    background-color: #f8f8f8;
+}
+
+    #main #wikipedia .focuswin-wikinav .focuswin-wikinav-headercontainer {
+        width: 100%;
+    }
+
+    #main #wikipedia .focuswin-wikinav .focuswin-wikinav-header {
+        color: #000;
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #main #wikipedia .focuswin-wikinav .focuswin-wikinav-search {
+        margin: 10px 0px;
+        ;
+    }
+
+        #main #wikipedia .focuswin-wikinav .focuswin-wikinav-search .focuswin-wikinav-searchcontainer {
+            width: 100%;
+            height: 40px;
+            position: relative;
+        }
+
+    #main #wikipedia .focuswin-wikinav .focuswin-wikinav-keywords {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        border: 0px;
+        padding: 0px 35px 0px 10px;
+        font-size: 16px;
+    }
+
+    #main #wikipedia .focuswin-wikinav .focuswin-wikinav-searchicon {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 3px;
+        right: -7px;
+        font-size: 20px;
+    }
+
+#main #wikipedia #wikicontent {
+    min-width: 324px;
+    float: left;
+    overflow-y: auto;
+    /*padding:8px 40px;*/
+}
+
+    #main #wikipedia #wikicontent .wikicontent-container {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        font-family: "Microsoft Yahei UI","Microsoft Yahei","微软雅黑",SimSun,"宋体", sans-serif;
+    }
+
+        #main #wikipedia #wikicontent .wikicontent-container .wikicontentdetail {
+            font-size: 16px;
+            line-height: 30px;
+            color: #000;
+        }
+
+            #main #wikipedia #wikicontent .wikicontent-container .wikicontentdetail .a {
+                font-size: 18px;
+                line-height: 50px;
+                font-weight: bold;
+            }
+
+            #main #wikipedia #wikicontent .wikicontent-container .wikicontentdetail .a0 {
+                line-height: 36px;
+            }
+
+            #main #wikipedia #wikicontent .wikicontent-container .wikicontentdetail .a4 {
+                text-align: center;
+            }
+
+    #main #wikipedia #wikicontent .wikicontent-copyicon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 12px;
+    }
+
+#main .wikicontent-removeicon {
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#main #wikipedia #wikicontent img {
+    max-width: 100%;
+}
+
+
+#main .focuswin-leftnav-td {
+    width: 200px;
+    /*background-color: #0a58aa;*/
+    background-color: #e6e6e6;
+    position: relative;
+}
+
+#main #manualcontent .left-part {
+    width: 200px;
+    background-color: #0a58aa;
+    /*background-color: #f8f8f8;*/
+    position: relative;
+}
+
+#main #manualcontent .manual-part-header {
+    line-height: 50px;
+    font-size: 18px;
+    color: #0959a9;
+}
+
+#main #manualcontent .manual-part-div {
+    width: 300px;
+    height: 260px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+    #main #manualcontent .manual-part-div .manual-part-bg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    #main #manualcontent .manual-part-div .manual-part-content {
+        position: absolute;
+        text-align: center;
+        z-index: 10;
+        color: #fff;
+        padding: 30px 40px;
+        width: 220px;
+    }
+
+#main #manualcontent .manual-videopage-content {
+    float: left;
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+    #main #manualcontent .manual-videopage-content .manual-videopage-cover {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 30px;
+        line-height: 30px;
+        background-image: url('../Images/video-cover.png');
+    }
+
+#main #manualcontent .manual-videosubpage-content {
+    float: left;
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+    #main #manualcontent .manual-videosubpage-content .manual-videosubpage-cover {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 30px;
+        line-height: 30px;
+        background-image: url('../Images/video-cover.png');
+    }
+
+#main #manualcontent .manual-videoListPage-content {
+    float: left;
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+    #main #manualcontent .manual-videoListPage-content .manual-videoListPage-cover {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 40px;
+        line-height: 20px;
+        background-image: url('../Images/video-cover.png');
+    }
+
+#main #manualcontent .manual-manualpage-content {
+    float: left;
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+    #main #manualcontent .manual-manualpage-content .manual-manualpage-cover {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 30px;
+        line-height: 30px;
+        background-image: url('../Images/video-cover.png');
+    }
+
+.focuswin-qutoes {
+    font-size: 12px;
+    margin: 0px 10px 10px 5px;
+    border: 1px dashed #a0a0a0;
+}
+
+
+.comment-content {
+    padding-left: 33px;
+    background-image: url('../Images/comment.gif');
+    background-repeat: no-repeat;
+}
+
+.focuswin-comment-content .created {
+    height: 28px;
+}
+
+
+
+.focuswin-content .forum-tag {
+    height: 22px;
+    background-color: #fff;
+    padding: 0px 10px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    margin: 5px;
+    line-height: 22px;
+    cursor: pointer;
+    float: left;
+}
+
+    .focuswin-content .forum-tag.active {
+        background-color: #1493DA;
+        color: #fff;
+    }
+
+
+.focuswin-content .caseStatus {
+    width: 85px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+    .focuswin-content .caseStatus.active {
+        background-color: #1493DA;
+        color: #fff;
+    }
+
+
+.focuswin-content .category {
+    width: 33.33%;
+    cursor: pointer;
+}
+
+    .focuswin-content .category.border {
+        border-right: 1px solid #f1f1f1;
+    }
+
+    .focuswin-content .category.active {
+        background-color: #1493DA;
+        color: #fff;
+    }
+
+.focuswin-content .approvetype {
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    background-color:#e0e0e0;
+    color:#323232;
+}
+
+    .focuswin-content .approvetype.active {
+        background-color: #1493DA;
+        color: #fff;
+    }
+
+#casecontent .focuswin-content .nav > li {
+    width:180px;
+    font-size:14px;
+    text-align:center;
+}
+
+   #casecontent .focuswin-manualhtml-list .list-table tbody tr {
+        line-height: 21px;
+    }

@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE9A0D4E-5B84-46C3-904D-0D61CDF30988}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Envision.KMS.Model</RootNamespace>
+    <AssemblyName>Envision.KMS.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Focuswin.SP.Base">
+      <HintPath>..\Lib\Focuswin.SP.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Envision.KMS.Model Site\Envision.KMS.EventReceiver.cs">
+      <DependentUpon>Envision.KMS.Model Site.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Envision.KMS.Model Web\Envision.KMS.EventReceiver.cs">
+      <DependentUpon>Envision.KMS.Model Web.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Announcement\AnnouncementEntity.cs" />
+    <Compile Include="Models\Announcement\AnnouncementMgr.cs" />
+    <Compile Include="Models\CaseManagement\CaseManagement.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseManagement.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CaseManagement\CaseManagementEntity.cs" />
+    <Compile Include="Models\CaseManagement\CaseManagementMgr.cs" />
+    <Compile Include="Models\ChineseConvert.cs" />
+    <Compile Include="Models\Comments\CommentsEntity.cs" />
+    <Compile Include="Models\Comments\CommentsLinq.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommentsLinq.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Comments\CommentsMgr.cs" />
+    <Compile Include="Models\Forum\ForumComments.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForumComments.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Forum\ForumEntity.cs" />
+    <Compile Include="Models\Forum\ForumMgr.cs" />
+    <Compile Include="Models\Forum\ForumViewHistory.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForumViewHistory.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GlobalSlider\GlobalSliderEntity.cs" />
+    <Compile Include="Models\GlobalSlider\GlobalSliderMgr.cs" />
+    <Compile Include="Models\LanguageMapping\LanguageEntity.cs" />
+    <Compile Include="Models\LanguageMapping\LanguageMgr.cs" />
+    <Compile Include="Models\MailTemplate\MailTemplateEntity.cs" />
+    <Compile Include="Models\MailTemplate\MailTemplateMgr.cs" />
+    <Compile Include="Models\Manual\ManualEntity.cs" />
+    <Compile Include="Models\Manual\ManualMgr.cs" />
+    <Compile Include="Models\Navigation\NavigationEntity.cs" />
+    <Compile Include="Models\Navigation\NavigationMgr.cs" />
+    <Compile Include="Models\Settings\SettingsEntity.cs" />
+    <Compile Include="Models\Settings\SettingsMgr.cs" />
+    <Compile Include="Models\Wikipedia\WikipediaEntity.cs" />
+    <Compile Include="Models\Wikipedia\WikipediaMgr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\KMS.Global.en-US.Designer.cs">
+      <DependentUpon>KMS.Global.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\KMS.Global.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KMS.Global.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Definitions\ContentTypes\Announcement ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0cd1fb0-3c49-4f6a-b902-3fd5f77be6b4}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\CaseManagement ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5f97ad9b-a489-4ee4-94bb-da39d40359ff}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\CaseType ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f88b7f8a-85ef-4a3e-a4fb-75342cd53cca}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\DefinitionLab ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c958192c-9653-4be0-b79f-3ba62a6c9d97}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\Forum ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a1f099f3-5bd8-4ff7-a6e4-7fe48f8f1064}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\ForumType ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e7d8d7a9-241d-4185-b31a-65fe76aa3f03}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\GlobalContact ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8bf3b8c-8923-4eac-91c4-5f01c267879a}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\GlobalSlider ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d17f6bec-f185-49d8-be0d-5c5f4267582d}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\LanguageMapping ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{33a363c7-4c1e-4658-a280-3590e6229c32}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\MailTemplate ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01d0fd71-1109-41c2-a22e-9bf49c7cbc62}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\ManualHtml ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1914adcc-fde9-4abd-be2b-fe105bdd008a}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\Navigation ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8fa5c6c8-336b-4cfb-b796-2d9429ff01d6}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\Settings ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bc4a83bb-688d-4a1c-ba6b-61fca7a2e689}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\ContentTypes\Wikipedia ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c2358eef-77a1-4677-a49c-22eea5cff772}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Fields\ProjectFields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{94b944d5-ed2b-4265-998f-5950cf2a9daa}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Announcement List\Announcement List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b4d1b37d-c223-4180-ad3f-145b191b0e79}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Announcement List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a8ffc59-d1aa-4075-899d-0cd8cd5b45a0}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\CaseManagement List\CaseManagement List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53d8180f-ddca-4ee2-9423-c2fa4015c06f}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\CaseManagement List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{df7fd68d-8483-4a00-bc9f-084c583632e1}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\CaseType List\CaseType List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{630dbc2f-463d-4e7c-b5c2-49374271f758}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\CaseType List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c323f55-77cb-4501-becb-9a7399d508b0}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\DefinitionLib List\DefinitionLib List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{12bd960c-6826-4576-9658-d7ca48744504}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\DefinitionLib List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d9ea0434-2e23-4741-8b19-39b4520a6edb}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Forum List\Forum List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{635930c1-ceb2-445e-b747-d0de66b62708}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Forum List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40b02b69-046f-420a-9ef7-a011fc1b6623}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\ForumType List\ForumType List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{766ec9a9-9fae-412c-86d4-c230e25ff223}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\ForumType List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{adb3c743-c700-4b6c-95c5-e21b3df6b526}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\GlobalContact List\GlobalContact List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9ce5fafd-b8fa-420a-8b59-00cc63feabc0}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\GlobalContact List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28d6f40f-c189-44ed-9239-6dbffab1789a}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\GlobalNavigation List\GlobalNavigation List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e5eba306-1102-4be8-a003-1881bbeb44ea}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\GlobalNavigation List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4ca0bd2-8108-4d64-aad3-0af4994408c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\GlobalSilder List\GlobalSilder List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{288ab2a2-3bc1-4d83-bb24-5d536e062a33}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\GlobalSilder List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1cf18268-1d34-4536-b3ae-9e25126ce924}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\LanguageMapping List\LanguageMapping List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4fd4e7ad-d05f-4618-9738-83bfdd92936e}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\LanguageMapping List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d31e7bf-e6cc-4940-85f8-4f9ea9a171de}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\MailTemplate List\MailTemplate List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8f62075a-9574-4d32-a4a4-dca6593d7ca0}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\MailTemplate List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77750f20-0740-4cff-9b44-a8af93c9d7fd}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\ManualDocs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c3c9c0ba-f4f9-44a1-a53c-e03a700c2abc}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\ManualHtmlLibrary\ManualHtmlLibraryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3383933a-3ccf-4ab3-92bf-1583a52c2cdf}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\ManualHtmlLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{799fa079-e83e-4629-b230-057ce8d92671}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Navigation List\Navigation List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e93cbc08-9d4a-4f7b-a586-04394361b1ae}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Navigation List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{422e96c4-061a-4b5b-a19e-e693089457c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Settings List\Settings List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34013daf-07c0-4ea2-83fa-50d2b6b76840}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Settings List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b4012796-2463-49fa-b90b-681bb33c0489}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\VideoLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35047622-9acc-499b-9b88-363fdc17a083}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Wikipedia List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d433bb5c-0f69-4661-a847-fa0033b00b91}</SharePointProjectItemId>
+    </None>
+    <None Include="Definitions\Lists\Wikipedia List\Wikipedia List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0598190-7d5d-44dc-b6ce-c1f0069ace2b}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Envision.KMS.Model Site\Envision.KMS.Model Site.feature">
+      <FeatureId>{d7f4bba1-dc80-4ba7-b58a-23f8c21addd8}</FeatureId>
+    </None>
+    <None Include="Features\Envision.KMS.Model Web\Envision.KMS.Model Web.feature">
+      <FeatureId>{b65651d7-8b7c-4c88-9d21-1a6a39dafbcc}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Models\CaseManagement\CaseManagement.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CaseManagement.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Comments\CommentsLinq.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CommentsLinq.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Forum\ForumComments.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ForumComments.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Forum\ForumViewHistory.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ForumViewHistory.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{ecd9c2f6-d36c-4a0d-bfce-7f84a9dfebed}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ce39204d-157c-4cf5-ab9c-8356033298c6}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Definitions\ContentTypes\CaseManagement ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\CaseType ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\Forum ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\ForumType ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\GlobalContact ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\GlobalSlider ContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Definitions\ContentTypes\LanguageMapping ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\MailTemplate ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\ManualHtml ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\Navigation ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\Settings ContentType\Elements.xml" />
+    <Content Include="Definitions\Lists\CaseManagement List\CaseManagement List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\CaseManagement List\Elements.xml" />
+    <Content Include="Definitions\Lists\CaseManagement List\Schema.xml" />
+    <Content Include="Definitions\Lists\CaseType List\CaseType List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\CaseType List\Elements.xml" />
+    <Content Include="Definitions\Lists\CaseType List\Schema.xml" />
+    <Content Include="Definitions\Lists\Forum List\Elements.xml" />
+    <Content Include="Definitions\Lists\Forum List\Forum List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\Forum List\Schema.xml" />
+    <Content Include="Definitions\Lists\ForumType List\Elements.xml" />
+    <Content Include="Definitions\Lists\ForumType List\ForumType List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\ForumType List\Schema.xml" />
+    <Content Include="Definitions\Lists\GlobalContact List\Elements.xml" />
+    <Content Include="Definitions\Lists\GlobalContact List\GlobalContact List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\GlobalContact List\Schema.xml" />
+    <Content Include="Definitions\Lists\GlobalNavigation List\Elements.xml" />
+    <Content Include="Definitions\Lists\GlobalNavigation List\GlobalNavigation List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\GlobalNavigation List\Schema.xml" />
+    <Content Include="Definitions\Lists\GlobalSilder List\Elements.xml" />
+    <Content Include="Definitions\Lists\GlobalSilder List\GlobalSilder List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\GlobalSilder List\Schema.xml" />
+    <Content Include="Definitions\Lists\LanguageMapping List\Elements.xml" />
+    <Content Include="Definitions\Lists\LanguageMapping List\LanguageMapping List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\LanguageMapping List\Schema.xml" />
+    <Content Include="Definitions\Lists\MailTemplate List\Elements.xml" />
+    <Content Include="Definitions\Lists\MailTemplate List\MailTemplate List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\MailTemplate List\Schema.xml" />
+    <Content Include="Definitions\Lists\ManualDocs\Elements.xml" />
+    <Content Include="Definitions\Lists\ManualHtmlLibrary\Elements.xml" />
+    <Content Include="Definitions\Lists\ManualHtmlLibrary\ManualHtmlLibraryInstance\Elements.xml" />
+    <Content Include="Definitions\Lists\ManualHtmlLibrary\Schema.xml" />
+    <Content Include="Definitions\Lists\Navigation List\Elements.xml" />
+    <Content Include="Definitions\Lists\Navigation List\Navigation List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\Navigation List\Schema.xml" />
+    <Content Include="Definitions\Lists\Settings List\Elements.xml" />
+    <Content Include="Definitions\Lists\Settings List\Schema.xml" />
+    <Content Include="Definitions\Lists\Settings List\Settings List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\VideoLibrary\Elements.xml" />
+    <Content Include="Resources\KMS.Global.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>KMS.Global1.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Definitions\ContentTypes\Announcement ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\DefinitionLab ContentType\Elements.xml" />
+    <Content Include="Definitions\ContentTypes\Wikipedia ContentType\Elements.xml" />
+    <Content Include="Definitions\Fields\ProjectFields\Elements.xml" />
+    <Content Include="Definitions\Lists\Announcement List\Announcement List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\Announcement List\Elements.xml" />
+    <Content Include="Definitions\Lists\Announcement List\Schema.xml" />
+    <Content Include="Definitions\Lists\DefinitionLib List\DefinitionLib List Instance\Elements.xml" />
+    <Content Include="Definitions\Lists\DefinitionLib List\Elements.xml" />
+    <Content Include="Definitions\Lists\DefinitionLib List\Schema.xml" />
+    <Content Include="Definitions\Lists\Wikipedia List\Elements.xml" />
+    <Content Include="Definitions\Lists\Wikipedia List\Schema.xml" />
+    <Content Include="Definitions\Lists\Wikipedia List\Wikipedia List Instance\Elements.xml" />
+    <Content Include="Features\Envision.KMS.Model Site\Envision.KMS.Model Site.Template.xml">
+      <DependentUpon>Envision.KMS.Model Site.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Envision.KMS.Model Web\Envision.KMS.Model Web.Template.xml">
+      <DependentUpon>Envision.KMS.Model Web.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\KMS.Global.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>KMS.Global.en-US.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Comments\CommentsLinq.dbml.layout">
+      <DependentUpon>CommentsLinq.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Forum\ForumComments.dbml.layout">
+      <DependentUpon>ForumComments.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Forum\ForumViewHistory.dbml.layout">
+      <DependentUpon>ForumViewHistory.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\CaseManagement\CaseManagement.dbml.layout">
+      <DependentUpon>CaseManagement.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01000CD786F2DE5E4297AFE2DC8D71D2462C"
+               Name="LanguageMapping ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{711852D7-1676-4356-970E-FB152C61FB18}" Name="Field_KMS_Model"/>
+      <FieldRef ID="{86D84838-63B5-4EAB-B328-0BFF528698F7}" Name="Field_KMS_ChineseName"/>
+      <FieldRef ID="{EA7E4195-B765-4B32-83D1-328F1D795A94}" Name="Field_KMS_EnglishName"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

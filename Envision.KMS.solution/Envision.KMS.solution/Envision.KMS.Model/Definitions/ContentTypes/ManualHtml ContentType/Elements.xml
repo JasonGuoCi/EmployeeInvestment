@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01009FA41110A5434ED492BB747FF800987D"
+               Name="ManualHtml ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AA1E6BCB-A408-4810-86E7-3C3B0CEAA836}" Name="Field_KMS_EnglishTitle"/>
+      <FieldRef ID="{0BDD37A7-EB73-4EBB-8922-AE53F6E87D13}" Name="Field_KMS_HtmlContent"/>
+      <FieldRef ID="{0DD3EBB6-700C-4194-A3BB-2224374B383F}" Name="Field_KMS_EnglishHtmlContent"/>
+      <FieldRef ID="{C5CE2659-68D3-4858-8EC8-AD35E40426C3}" Name="Field_KMS_Link"/>
+      <FieldRef ID="{1E28055F-055F-4D9A-96B9-8A9E704B9DC9}" Name="Field_KMS_EnglishLink"/>
+      <FieldRef ID="{E3B77FCB-5C9C-4074-A6EB-F2F36E5CEA36}" Name="Field_KMS_Status"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

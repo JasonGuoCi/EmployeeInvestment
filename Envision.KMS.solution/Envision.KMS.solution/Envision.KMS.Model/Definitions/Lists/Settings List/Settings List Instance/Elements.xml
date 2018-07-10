@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SystemSettings" OnQuickLaunch="TRUE" TemplateType="1006" Url="Lists/SystemSettings" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">DBConnection</Field>
+          <Field Name="Field_KMS_DefaultValue"></Field>
+          <Field Name="Field_KMS_Description"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Admin Group</Field>
+          <Field Name="Field_KMS_DefaultValue"></Field>
+          <Field Name="Field_KMS_Description"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">IsNavigation</Field>
+          <Field Name="Field_KMS_DefaultValue">0</Field>
+          <Field Name="Field_KMS_Description"></Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

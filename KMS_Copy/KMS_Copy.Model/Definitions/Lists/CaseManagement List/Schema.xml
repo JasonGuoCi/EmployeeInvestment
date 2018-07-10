@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CaseManagement List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CaseManagement List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100798A64A7F4E94E6DB968484D1F7ED2FF" Name="CaseManagement ContentType" Group="自定义内容类型" Description="CaseManagement ContentType" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{6e6784a8-2d82-4da2-a410-a3e2462f9f71}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_User;" Required="FALSE" Name="Field_Case_User" /><FieldRef ID="{2297cab1-3873-410d-9822-f8004abd8a85}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_EnglishTitle;" Name="Field_Case_EnglishTitle" /><FieldRef ID="{134e72af-cf78-4120-ab2f-7e3a8b9712a4}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Content;" Required="FALSE" Name="Field_Case_Content" NumLines="6" /><FieldRef ID="{61a009f9-53ca-41d2-bd1c-8f8090c77423}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Type;" Required="false" Name="Field_Case_Type" /><FieldRef ID="{8bfff680-a764-4f79-9b1d-4d662f72519d}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Status;" Required="FALSE" Name="Field_Case_Status" Format="Dropdown" /><FieldRef ID="{e9dd5fa8-8f78-4538-a749-ff989d7a79dc}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Comments;" Required="FALSE" Name="Field_Case_Comments" NumLines="6" /><FieldRef ID="{4eeae98d-78cd-4d70-aa1b-bc2cd64424b2}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_IsTop;" Hidden="TRUE" Name="Field_KMS_IsTop" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{6e6784a8-2d82-4da2-a410-a3e2462f9f71}" Name="Field_Case_User" StaticName="Field_Case_User" DisplayName="$Resources:KMS_Copy.Global,Field_Case_User;" Required="FALSE" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="User" UserSelectionMode="0"></Field><Field ID="{2297cab1-3873-410d-9822-f8004abd8a85}" Name="Field_Case_EnglishTitle" StaticName="Field_Case_EnglishTitle" DisplayName="$Resources:KMS_Copy.Global,Field_Case_EnglishTitle;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="Text" /><Field ID="{134e72af-cf78-4120-ab2f-7e3a8b9712a4}" Name="Field_Case_Content" StaticName="Field_Case_Content" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Content;" Required="FALSE" Group="$Resources:KMS_Copy.Global,Definition_Group;" RichText="FALSE" NumLines="6" Type="Note" /><Field ID="{61a009f9-53ca-41d2-bd1c-8f8090c77423}" Type="Lookup" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Type;" Required="false" List="Lists/CaseType" ShowField="Title" UnlimitedLengthInDocumentLibrary="TRUE" Group="$Resources:KMS_Copy.Global,Definition_Group;" StaticName="Field_Case_Type" Name="Field_Case_Type" /><Field ID="{8bfff680-a764-4f79-9b1d-4d662f72519d}" Name="Field_Case_Status" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Status;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Required="FALSE" Type="Choice" Format="Dropdown"><Default></Default><CHOICES><CHOICE>申请中</CHOICE><CHOICE>已完成</CHOICE></CHOICES></Field><Field ID="{e9dd5fa8-8f78-4538-a749-ff989d7a79dc}" Name="Field_Case_Comments" StaticName="Field_Case_Comments" DisplayName="$Resources:KMS_Copy.Global,Field_Case_Comments;" Required="FALSE" Group="$Resources:KMS_Copy.Global,Definition_Group;" RichText="FALSE" NumLines="6" Type="Note" /><Field ID="{4eeae98d-78cd-4d70-aa1b-bc2cd64424b2}" Name="Field_KMS_IsTop" StaticName="Field_KMS_IsTop" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_IsTop;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Hidden="TRUE" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_Case_User" /><FieldRef Name="Field_Case_EnglishTitle" /><FieldRef Name="Field_Case_Content" /><FieldRef Name="Field_Case_Type" /><FieldRef Name="Field_Case_Status" /><FieldRef Name="Field_Case_Comments" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

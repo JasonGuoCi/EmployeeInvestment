@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- 父内容类型: Item (0x01) -->
+  <ContentType ID="0x0100E93C2B510A3242FEA9D7678A23C7C45F" Name="CaseType ContentType" Group="KMS Content Type" Description="CaseType ContentType" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{6e6784a8-2d82-4da2-a410-a3e2462f9f71}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_User;" Required="FALSE" Name="Field_Case_User" />
+      <FieldRef ID="{2297cab1-3873-410d-9822-f8004abd8a85}" DisplayName="$Resources:KMS_Copy.Global,Field_Case_EnglishTitle;" Name="Field_Case_EnglishTitle" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

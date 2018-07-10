@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01007378F0F3C1274EE39E0E36BAAC017983"
+               Name="ForumType ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order"/>
+      <FieldRef ID="{AA1E6BCB-A408-4810-86E7-3C3B0CEAA836}" Name="Field_KMS_EnglishTitle"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

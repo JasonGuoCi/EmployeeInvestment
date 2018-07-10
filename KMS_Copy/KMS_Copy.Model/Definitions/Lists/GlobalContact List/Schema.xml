@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="GlobalContact List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/GlobalContact List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100A4DCBD5F5A5F4C4393AAC2CE86D1C7E4" Name="GlobalContact ContentType" Group="KMS Content Type" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{b0235407-42b9-4fb0-a535-9236208ac431}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminName;" Name="Field_KMS_AdminName" /><FieldRef ID="{fd5ccf0e-c4f2-45c9-916e-454abf68baea}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminContact;" Name="Field_KMS_AdminContact" /><FieldRef ID="{a2ff9be0-fb6a-47f2-81dd-cf137f5c10d1}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminField1;" Name="Field_KMS_AdminField1" /><FieldRef ID="{3b7818ec-cd4b-401e-bb00-e80362696ae9}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminField2;" Name="Field_KMS_AdminField2" /><FieldRef ID="{9e03d8b7-b06e-42e9-aac5-45d79cd3132a}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminField3;" Name="Field_KMS_AdminField3" /><FieldRef ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;" Name="Field_KMS_Order" /><FieldRef ID="{6edb54f5-76f2-4e3c-821f-9e4bfd820c44}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_RelatedGlobal;" Required="false" Name="Field_KMS_RelatedGlobal" /></FieldRefs></ContentType><ContentType ID="0x01006e43cdc946db4cb2951f3ab7b9c605e9" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{b0235407-42b9-4fb0-a535-9236208ac431}" Name="Field_KMS_AdminName" /><FieldRef ID="{fd5ccf0e-c4f2-45c9-916e-454abf68baea}" Name="Field_KMS_AdminContact" /><FieldRef ID="{a2ff9be0-fb6a-47f2-81dd-cf137f5c10d1}" Name="Field_KMS_AdminField1" /><FieldRef ID="{3b7818ec-cd4b-401e-bb00-e80362696ae9}" Name="Field_KMS_AdminField2" /><FieldRef ID="{9e03d8b7-b06e-42e9-aac5-45d79cd3132a}" Name="Field_KMS_AdminField3" /><FieldRef ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" Name="Field_KMS_Order" /><FieldRef ID="{6edb54f5-76f2-4e3c-821f-9e4bfd820c44}" Name="Field_KMS_RelatedGlobal" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{b0235407-42b9-4fb0-a535-9236208ac431}" Name="Field_KMS_AdminName" StaticName="Field_KMS_Admin" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminName;" Type="Text" Group="$Resources:KMS_Copy.Global,Definition_Group"></Field><Field ID="{fd5ccf0e-c4f2-45c9-916e-454abf68baea}" Name="Field_KMS_AdminContact" StaticName="Field_KMS_AdminContact" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminContact;" Type="Text" Group="$Resources:KMS_Copy.Global,Definition_Group;"></Field><Field ID="{a2ff9be0-fb6a-47f2-81dd-cf137f5c10d1}" Name="Field_KMS_AdminField1" StaticName="Field_KMS_AdminField1" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminField1;" Type="Text" Group="$Resources:KMS_Copy.Global,Definition_Group;"></Field><Field ID="{3b7818ec-cd4b-401e-bb00-e80362696ae9}" Name="Field_KMS_AdminField2" StaticName="Field_KMS_AdminField2" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminField2;" Type="Text" Group="$Resources:KMS_Copy.Global,Definition_Group;"></Field><Field ID="{9e03d8b7-b06e-42e9-aac5-45d79cd3132a}" Name="Field_KMS_AdminField3" StaticName="Field_KMS_AdminField3" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_AdminField3;" Type="Text" Group="$Resources:KMS_Copy.Global,Definition_Group;"></Field><Field ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" Name="Field_KMS_Order" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;" Type="Integer" Group="$Resources:KMS_Copy.Global,Definition_Group;"></Field><Field ID="{6edb54f5-76f2-4e3c-821f-9e4bfd820c44}" Type="Lookup" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_RelatedGlobal;" Required="false" List="Lists/GlobalSilder" ShowField="Title" UnlimitedLengthInDocumentLibrary="TRUE" Group="$Resources:KMS_Copy.Global,Definition_Group;" StaticName="Field_KMS_RelatedGlobal" Name="Field_KMS_RelatedGlobal" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_KMS_AdminName" /><FieldRef Name="Field_KMS_AdminContact" /><FieldRef Name="Field_KMS_AdminField1" /><FieldRef Name="Field_KMS_AdminField2" /><FieldRef Name="Field_KMS_AdminField3" /><FieldRef Name="Field_KMS_Order" /><FieldRef Name="Field_KMS_RelatedGlobal" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

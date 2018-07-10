@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0d7233d8-3c68-4ffb-903e-629dba24e9b7}"
+       Name="Field_KMS_Model"
+       StaticName="Field_KMS_Model"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Model;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Required="FALSE"
+       Type="Choice" Format="Dropdown">
+        <CHOICES>
+          <CHOICE>页首</CHOICE>
+          <CHOICE>左侧导航</CHOICE>
+          <CHOICE>通知公告</CHOICE>
+          <CHOICE>百科</CHOICE>
+          <CHOICE>操作教程</CHOICE>
+          <CHOICE>论坛</CHOICE>
+          <CHOICE>互动管理</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

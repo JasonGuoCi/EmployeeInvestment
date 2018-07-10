@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="97a6f5e9-f93b-4b49-b4dc-30d3dda210f0" solutionId="97a6f5e9-f93b-4b49-b4dc-30d3dda210f0" resetWebServer="false" sharePointProductVersion="15.0" name="KMS_Copy" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="6e6b278d-97bf-4f16-85a9-345569ae50c6" />
+    <featureReference itemId="8bab8e65-badd-4b17-bd4f-1eed1f79840c" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="c96f3011-2e0f-4703-978e-bf5fd0f1bcf4" />
+    <projectItemReference itemId="24cacc79-7620-4d93-afaf-aa97141b676b" />
+  </projectItems>
+</package>

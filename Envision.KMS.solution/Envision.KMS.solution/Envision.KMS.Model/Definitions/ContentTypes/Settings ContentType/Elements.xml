@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01001A1F7CEB9834493BA8B751F542A2CEE2"
+               Name="Settings ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{A63A99A5-08E8-4124-8914-7D20433091E7}" Name="Field_KMS_DefaultValue"/>
+      <FieldRef ID="{D3A2B301-BE44-42D6-B3F6-A0C0976685FF}" Name="Field_KMS_Description"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

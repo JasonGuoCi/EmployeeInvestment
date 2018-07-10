@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{308e242b-da75-43d1-b302-5c80974ee62b}"
+       Name="Field_KMS_LastComments"
+       StaticName="Field_KMS_LastComments"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_LastComments;"
+       Required="FALSE"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Type="DateTime"
+       Format="DateTime"
+       />
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ProjectPages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Home.aspx" Target="ProjectPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Wikipedia.aspx" Target="ProjectPages\" Type="ElementFile" />
+    <ProjectItemFile Source="LayoutPage.aspx" Target="ProjectPages\" Type="ElementFile" />
+    <ProjectItemFile Source="VideoPlayer.aspx" Target="ProjectPages\" Type="ElementFile" />
+    <ProjectItemFile Source="CaseManagement.aspx" Target="ProjectPages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

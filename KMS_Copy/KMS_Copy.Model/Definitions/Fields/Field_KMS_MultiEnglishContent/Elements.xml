@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c3bcd1ed-8141-48e1-8ca5-a45f5ffcbfb1}"
+       Name="Field_KMS_MultiEnglishContent"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_MultiEnglishContent;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Required="TRUE"
+       Type="Note">
+  </Field>
+</Elements>

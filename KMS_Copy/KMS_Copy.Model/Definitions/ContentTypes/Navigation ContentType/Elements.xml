@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- 父内容类型: Item (0x01) -->
+  <ContentType ID="0x0100A88F955971864D2B9DBACB4CD73FE38B" Name="Navigation ContentType" Group="KMS Content Type" Description="KMS Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{2cd4701f-324d-434c-b3b2-48f84f3e1750}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishTitle;" Name="Field_KMS_EnglishTitle" />
+      <FieldRef ID="{99a2d4f9-65bb-4723-a7ba-f22a444c09b9}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_GlobalLink;" Name="Field_KMS_GlobalLink" />
+      <FieldRef ID="{9a64ac18-59d1-4225-a64e-c82975ad1104}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_SeriesNo;" Name="Field_KMS_SeriesNo" />
+      <FieldRef ID="{3efd424c-a505-48f7-acf9-ad8e319c8c2b}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_ParentNo;" Name="Field_KMS_ParentNo" />
+      <FieldRef ID="{80cb1983-37fc-4764-a1f0-b36aca3113f0}" DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Order;" Name="Field_KMS_Order" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

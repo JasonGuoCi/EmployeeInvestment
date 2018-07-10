@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="GlobalNavigation" OnQuickLaunch="TRUE" TemplateType="1014" Url="Lists/GlobalNavigation" Description="My List Instance"></ListInstance>
+</Elements>

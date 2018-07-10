@@ -1,0 +1,179 @@
+#main .focuswin-leftnav {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    color: #000;
+}
+
+    #main .focuswin-leftnav .leftnav-header {
+        height: 60px;
+        line-height: 30px;
+        margin-top: 10px;
+        font-size: 20px;
+        cursor:pointer;
+        text-align:center;
+    }
+
+        #main .focuswin-leftnav.chs .leftnav-header {
+            line-height: 60px;
+            font-size: 24px;
+            text-align:left;
+            margin-left:30px;
+        }
+
+    #main .focuswin-leftnav .jstree-icon {
+        float: right;
+    }
+
+
+    #main .focuswin-leftnav .jstree-default .jstree-node {
+        padding-left: 20px;
+        line-height: 40px;
+        background-image: url(tree-link.png);
+        background-position: 5px 0px;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+    }
+
+
+    #main .focuswin-leftnav .jstree-container-ul > .jstree-node {
+        background-image: none;
+        margin-left: -20px;
+        font-size: 16px;
+    }
+
+    #main .focuswin-leftnav .jstree-default .jstree-icon {
+        background-image: none;
+    }
+
+
+    #main .focuswin-leftnav .jstree-children {
+        /*background: #1494DA;*/
+    }
+
+        #main .focuswin-leftnav .jstree-children .jstree-children {
+            background-color: #167fb9;
+            color: #dfe4ed;
+            font-size: 14px;
+        }
+
+    #main .focuswin-leftnav .jstree-default .jstree-closed > .jstree-ocl {
+        background-image: none;
+        background-position: 16px 16px;
+        background-repeat: no-repeat;
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+    }
+
+
+    #main .focuswin-leftnav .jstree-default .jstree-open > .jstree-ocl {
+        background-image: none;
+        background-position: 16px 16px;
+        background-repeat: no-repeat;
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+    }
+
+    #main .focuswin-leftnav .jstree-default .jstree-leaf > .jstree-ocl {
+        background-image: none;
+    }
+
+    #main .focuswin-leftnav .jstree-default .jstree-anchor {
+        line-height: 53px;
+        height: 53px;
+        padding-left: 30px;
+        font-size:20px;
+        display: block;
+    }
+
+    #main .focuswin-leftnav .jstree-children .jstree-children .jstree-leaf .jstree-anchor {
+    line-height: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+
+    #main .focuswin-leftnav .jstree-default .jstree-children .jstree-children .jstree-anchor {
+        padding-left: 10px;
+    }
+
+    #main .focuswin-leftnav .jstree-default .jstree-hovered {
+        background: #1493DA;
+    }
+
+
+    #main .focuswin-leftnav .jstree-default .jstree-clicked {
+        background: #4ba9e7;
+    }
+
+
+
+
+#main .focuswin-wikinav .jstree-default .jstree-closed > .jstree-ocl {
+    /*background-image: url(icon_open.png);
+    background-position: 2px 4px;*/
+    background-repeat: no-repeat;
+    height: 22px;
+    line-height: 22px;
+    width: 24px;
+}
+
+
+#main .focuswin-wikinav .jstree-default .jstree-open > .jstree-ocl {
+    /*background-image: url(icon_fold.png);
+    background-position: 2px 4px;*/
+    background-repeat: no-repeat;
+    height: 22px;
+    line-height: 22px;
+    width: 24px;
+}
+
+#main .focuswin-wikinav .jstree-default .jstree-anchor {
+    line-height: 25px;
+    height: 25px;
+    font-size: 16px;
+}
+
+#main .focuswin-wikinav .jstree-default .jstree-icon:empty {
+    height: 28px;
+    line-height: 28px;
+}
+
+#main .focuswin-wikinav .jstree-default .jstree-themeicon {
+    background-position: 2px 4px;
+    background-image: url('../../../Images/icon_open_book.png');
+}
+
+#main .focuswin-wikinav #left-searchResult.jstree-default > .jstree-container-ul > .jstree-node {
+    background-image: none;
+}
+
+#main .focuswin-wikinav  #left-searchResult.jstree-default .jstree-leaf > .jstree-ocl {
+    background-image: none;
+}
+
+
+
+#main .focuswin-wikinav .jstree-children .jstree-children .jstree-leaf .jstree-anchor {
+    line-height: 25px;
+    height: 25px;
+    font-size: 14px;
+}
+
+    #main .focuswin-wikinav .jstree-children .jstree-children .jstree-leaf .jstree-anchor .jstree-icon {
+        background-position: 2px 5px;
+        background-image: url('../../../Images/icon_fold_paper.png');
+    }
+
+#main .focuswin-wikinav #left-searchResult.jstree-default .jstree-themeicon {
+    background-position: 2px 5px;
+        background-image: url('../../../Images/icon_fold_paper.png');
+}
+
+
+#main .focuswin-wikinav #left-searchResult.jstree-default .jstree-anchor {
+    line-height: 25px;
+    height: 25px;
+    font-size: 14px;
+}

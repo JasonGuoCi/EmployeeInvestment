@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="MasterPage\" Type="ElementManifest" />
+    <ProjectItemFile Source="Sample.txt" Target="MasterPage\" Type="ElementFile" />
+    <ProjectItemFile Source="Envision.KMS.master" Target="MasterPage\" Type="ElementFile" />
+    <ProjectItemFile Source="Envision.KMS.Global.master" Target="MasterPage\" Type="ElementFile" />
+    <ProjectItemFile Source="Envision.KMS.Basic.master" Target="MasterPage\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

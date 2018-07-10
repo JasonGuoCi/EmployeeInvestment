@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Envision.KMS.DB" Class="CaseManagementDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.CaseManagementTask" Member="CaseManagementTasks">
+    <Type Name="CaseManagementTask">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CaseId" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CaseTitle" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AssignedToAccount" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="AssignedToDisplayName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CaseType" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="WebID" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CreatedByAccount" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="AssignedToEmail" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

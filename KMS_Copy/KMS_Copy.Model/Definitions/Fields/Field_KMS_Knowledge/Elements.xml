@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f66f4538-ca0a-4254-9aca-10e91c48d18a}"
+       Type="Lookup"
+       SourceID="http://schemas.microsoft.com/sharepoint/v3"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_Knowledge;"
+       Required="false"
+       List="Lists/DefinitionLibrary"
+       ShowField="Title"
+       UnlimitedLengthInDocumentLibrary="TRUE"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       StaticName="Field_KMS_Knowledge"
+       Name="Field_KMS_Knowledge" />
+</Elements>

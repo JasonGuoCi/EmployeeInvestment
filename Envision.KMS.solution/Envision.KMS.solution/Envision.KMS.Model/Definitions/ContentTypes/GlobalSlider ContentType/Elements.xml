@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010002115F5E3AF84BAEB16646ACBF9185DA"
+               Name="GlobalSlider ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AA1E6BCB-A408-4810-86E7-3C3B0CEAA836}" Name="Field_KMS_EnglishTitle"/>
+      <FieldRef ID="{D696DE7E-5A3A-45D1-80AF-939F2B8A7620}" Name="Field_KMS_GlobalDesc"/>
+      <FieldRef ID="{C26BCDDD-2166-4E68-B68F-941ABDC6351B}" Name="Field_KMS_GlobalEngDesc"/>
+      <FieldRef ID="{F798CD13-721D-4569-89D7-6ADEA994BC92}" Name="Field_KMS_GlobalImg"/>
+      <FieldRef ID="{4A588178-4D82-4DC8-AA7F-5873DFB79B64}" Name="Field_KMS_GlobalLink"/>
+      <FieldRef ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order"/>
+      <FieldRef ID="{E3B77FCB-5C9C-4074-A6EB-F2F36E5CEA36}" Name="Field_KMS_Status"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

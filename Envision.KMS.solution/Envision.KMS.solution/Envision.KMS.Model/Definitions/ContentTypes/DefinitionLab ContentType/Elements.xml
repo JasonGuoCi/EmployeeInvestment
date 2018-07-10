@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100DCD38C1E4ADD4C54991A19DF15468466"
+               Name="DefinitionLab ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AA1E6BCB-A408-4810-86E7-3C3B0CEAA836}" Name="Field_KMS_EnglishTitle"/>
+      <FieldRef ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order"/>
+      <FieldRef ID="{E3B77FCB-5C9C-4074-A6EB-F2F36E5CEA36}" Name="Field_KMS_Status"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0419c76a-27f2-4cb4-9ffd-0775ab151dbf}"
+       Name="Field_KMS_EnglishHtmlContent"
+       DisplayName="$Resources:KMS_Copy.Global,Field_KMS_EnglishHtmlContent;"
+       Group="$Resources:KMS_Copy.Global,Definition_Group;"
+       Required="TRUE"
+       UnlimitedLengthInDocumentLibrary="TRUE"
+       Sealed="TRUE" RichText="TRUE" RichTextMode="FullHtml"
+       Type="HTML">
+  </Field>
+</Elements>

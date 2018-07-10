@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MailTemplate List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MailTemplate List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100020d134cf5eb4155bb21dea1c64c5a6b" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{6abe2825-c628-41f9-8795-58892afc0be6}" Name="Field_Email_Subject" /><FieldRef ID="{d2a2c1dd-662e-4694-9dd2-aad8afd65b92}" Name="Field_Email_Content" /></FieldRefs></ContentType><ContentType ID="0x010032F30A5A17A547FD933D618438029BE9" Name="MailTemplate ContentType" Group="自定义内容类型" Description="MailTemplate ContentType" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{6abe2825-c628-41f9-8795-58892afc0be6}" DisplayName="$Resources:KMS_Copy.Global,Field_Email_Subject;" Name="Field_Email_Subject" /><FieldRef ID="{d2a2c1dd-662e-4694-9dd2-aad8afd65b92}" DisplayName="$Resources:KMS_Copy.Global,Field_Email_Content;" Required="FALSE" Name="Field_Email_Content" NumLines="6" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{6abe2825-c628-41f9-8795-58892afc0be6}" Name="Field_Email_Subject" DisplayName="$Resources:KMS_Copy.Global,Field_Email_Subject;" Group="$Resources:KMS_Copy.Global,Definition_Group;" Type="Text" Required="TRUE" /><Field ID="{d2a2c1dd-662e-4694-9dd2-aad8afd65b92}" Name="Field_Email_Content" StaticName="Field_Email_Content" DisplayName="$Resources:KMS_Copy.Global,Field_Email_Content;" Required="TRUE" Group="$Resources:KMS_Copy.Global,Definition_Group;" RichText="FALSE" NumLines="6" Type="Note" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Field_Email_Subject" /><FieldRef Name="Field_Email_Content" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01009CC7F5270A6F4894BB43E91449A708F3"
+               Name="Wikipedia ContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AA1E6BCB-A408-4810-86E7-3C3B0CEAA836}" Name="Field_KMS_EnglishTitle"/>
+      <FieldRef ID="{0BDD37A7-EB73-4EBB-8922-AE53F6E87D13}" Name="Field_KMS_HtmlContent"/>
+      <FieldRef ID="{0DD3EBB6-700C-4194-A3BB-2224374B383F}" Name="Field_KMS_EnglishHtmlContent"/>
+      <FieldRef ID="{16108398-722D-4765-BB3D-19401F23F19A}" Name="Field_KMS_Order"/>
+      <FieldRef ID="{FC4BBCD5-73D3-472F-8499-A448C321849F}" Name="Field_KMS_Knowledge"/>
+      <FieldRef ID="{E3B77FCB-5C9C-4074-A6EB-F2F36E5CEA36}" Name="Field_KMS_Status"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5329be4f-8b41-4336-a642-74ab894de7cc" solutionId="5329be4f-8b41-4336-a642-74ab894de7cc" resetWebServer="false" sharePointProductVersion="15.0" name="SharePoint.WCFService.Sample" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="cfc8db7a-f302-4eb1-a2fb-5267ace09bc1" />
+    <projectItemReference itemId="f24dd503-92fb-4653-98b6-7cd978c3d782" />
+  </projectItems>
+</package>

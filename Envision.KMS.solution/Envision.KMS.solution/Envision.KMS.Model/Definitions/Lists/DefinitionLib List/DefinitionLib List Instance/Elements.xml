@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="DefinitionLibrary" OnQuickLaunch="FALSE" TemplateType="1002" Url="Lists/DefinitionLibrary" Description="Wikipedia Definition library"></ListInstance>
+</Elements>

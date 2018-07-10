@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="33a055da-fc2e-4da5-9f99-9fde6efa2cec" ChangeDateTime="07/11/2016 07:43:57">
+    <Property Name="ElementName" Value="[dbo].[CaseManagementTask].[AssignedTo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CaseManagementTask]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AssignedToAccount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="76356cdc-b8a7-4a90-9ba6-cc1b243e0a11" ChangeDateTime="07/14/2016 06:49:14">
+    <Property Name="ElementName" Value="[dbo].[CaseManagementTask].[WebId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CaseManagementTask]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WebID" />
+  </Operation>
+</Operations>
